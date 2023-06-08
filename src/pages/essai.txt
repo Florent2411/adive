@@ -1,0 +1,1633 @@
+<div className="preloader">
+    <button className="as-btn style3 preloaderCls">Cancel Preloader</button>
+    <div className="preloader-inner">
+        <span className="loader" />
+    </div>
+</div>
+<div className="sidemenu-wrapper d-none d-lg-block">
+    <div className="sidemenu-content bg-title">
+        <button className="closeButton
+              sideMenuCls">
+            <i className="far fa-times" />
+        </button>
+        <div className="widget footer-widget">
+            <div className="as-widget-about">
+                <div className="about-logo">
+                    <a href="index.html">
+                        <img src="assets/img/logo-white.svg" alt="Dalky" />
+                    </a>
+                </div>
+                <p className="about-text">
+                    Quickly supply alternative strategic theme areas vis-a-vis B2C
+                    mindshare. Objectively repurpose stand-alone synergy via
+                    user-centric architectures.
+                </p>
+                <div className="as-social">
+                    <a href="https://www.facebook.com/">
+                        <i className="fab
+                              fa-facebook-f" />
+                    </a>{" "}
+                    <a href="https://www.twitter.com/">
+                        <i className="fab
+                              fa-twitter" />
+                    </a>{" "}
+                    <a href="https://www.linkedin.com/">
+                        <i className="fab
+                              fa-linkedin-in" />
+                    </a>{" "}
+                    <a href="https://www.whatsapp.com/">
+                        <i className="fab
+                              fa-whatsapp" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div className="widget footer-widget">
+            <h3 className="widget_title">Recent Posts</h3>
+            <div className="recent-post-wrap">
+                <div className="recent-post">
+                    <div className="media-img">
+                        <a href="blog-details.html">
+                            <img src="assets/img/blog/recent-post-2-1.jpg" alt="Blog Image" />
+                        </a>
+                    </div>
+                    <div className="media-body">
+                        <h4 className="post-title">
+                            <a className="text-inherit" href="blog-details.html">
+                                App Promotes Sales of Markets it.
+                            </a>
+                        </h4>
+                        <div className="recent-post-meta">
+                            <a href="blog.html">
+                                <i className="fal
+                                      fa-calendar-days" />
+                                21 June, 2022
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div className="recent-post">
+                    <div className="media-img">
+                        <a href="blog-details.html">
+                            <img src="assets/img/blog/recent-post-2-2.jpg" alt="Blog Image" />
+                        </a>
+                    </div>
+                    <div className="media-body">
+                        <h4 className="post-title">
+                            <a className="text-inherit" href="blog-details.html">
+                                Best Define World IT Digital Solution
+                            </a>
+                        </h4>
+                        <div className="recent-post-meta">
+                            <a href="blog.html">
+                                <i className="fal
+                                      fa-calendar-days" />
+                                22 June, 2022
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className="widget newsletter-widget footer-widget">
+            <h3 className="widget_title">Newsletter</h3>
+            <p className="footer-text">
+                Completely morph distributed web services for interactive sources.
+            </p>
+            <form className="newsletter-form">
+                <input className="form-control" type="email" placeholder="Enter Email" required="" />
+                <button type="submit" className="as-btn">
+                    Subscribe
+                </button>
+            </form>
+            <div className="social-box mt-35">
+                <h6 className="social-title">Follow Us:</h6>
+                <div className="icon-group">
+                    <a href="https://www.facebook.com/">
+                        <i className="fab
+                              fa-facebook-f" />
+                    </a>{" "}
+                    <a href="https://www.twitter.com/">
+                        <i className="fab
+                              fa-twitter" />
+                    </a>{" "}
+                    <a href="https://www.linkedin.com/">
+                        <i className="fab
+                              fa-linkedin-in" />
+                    </a>{" "}
+                    <a href="https://www.pinterest.com/">
+                        <i className="fab
+                              fa-pinterest-p" />
+                    </a>{" "}
+                    <a href="https://www.instagram.com/">
+                        <i className="fab
+                              fa-instagram" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div className="popup-search-box d-none d-lg-block">
+    <button className="searchClose">
+        <i className="fal fa-times" />
+    </button>
+    <form action="index.html#">
+        <input type="text" placeholder="What are
+              you looking for?" />{" "}
+        <button type="submit">
+            <i className="fal
+                  fa-search" />
+        </button>
+    </form>
+</div>
+<div className="as-menu-wrapper">
+    <div className="as-menu-area text-center">
+        <button className="as-menu-toggle">
+            <i className="fal fa-times" />
+        </button>
+        <div className="mobile-logo">
+            <a href="index.html">
+                <img src="assets/img/logo.svg" alt="Dalky" />
+            </a>
+        </div>
+        <div className="as-mobile-menu">
+            <ul>
+                <li className="menu-item-has-children">
+                    <a href="index.html">Home</a>
+                    <ul className="sub-menu">
+                        <li>
+                            <a href="index.html">Web Agency</a>
+                        </li>
+                        <li>
+                            <a href="index-2.html">Startup Agency</a>
+                        </li>
+                        <li>
+                            <a href="index-3.html">Marketing Agency</a>
+                        </li>
+                        <li>
+                            <a href="index-4.html">Digital Agency</a>
+                        </li>
+                        <li>
+                            <a href="index-rtl.html">Web Agency RTL</a>
+                        </li>
+                        <li>
+                            <a href="index-2-rtl.html">Startup Agency RTL</a>
+                        </li>
+                        <li>
+                            <a href="index-3-rtl.html">Marketing Agency RTL</a>
+                        </li>
+                        <li>
+                            <a href="index-4-rtl.html">Digital Agency RTL</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="about.html">About Us</a>
+                </li>
+                <li className="menu-item-has-children">
+                    <a href="index.html#">Services</a>
+                    <ul className="sub-menu">
+                        <li>
+                            <a href="service.html">Services</a>
+                        </li>
+                        <li>
+                            <a href="service-details.html">Services Details</a>
+                        </li>
+                        <li>
+                            <a href="service-rtl.html">Services RTL</a>
+                        </li>
+                        <li>
+                            <a href="service-details-rtl.html">Services Details RTL</a>
+                        </li>
+                    </ul>
+                </li>
+                <li className="menu-item-has-children">
+                    <a href="index.html#">Pages</a>
+                    <ul className="sub-menu">
+                        <li className="menu-item-has-children">
+                            <a href="index.html#">RTL Pages</a>
+                            <ul className="sub-menu">
+                                <li>
+                                    <a href="about-rtl.html">About Us RTL</a>
+                                </li>
+                                <li>
+                                    <a href="contact-rtl.html">Contact Us RTL</a>
+                                </li>
+                                <li>
+                                    <a href="team-rtl.html">Team RTL</a>
+                                </li>
+                                <li>
+                                    <a href="team-details-rtl.html">Team Details RTL</a>
+                                </li>
+                                <li>
+                                    <a href="project-rtl.html">Project RTL</a>
+                                </li>
+                                <li>
+                                    <a href="project-details-rtl.html">Project Details RTL</a>
+                                </li>
+                                <li>
+                                    <a href="faq-rtl.html">Faq Page RTL</a>
+                                </li>
+                                <li>
+                                    <a href="pricing-rtl.html">Pricing RTL</a>
+                                </li>
+                                <li>
+                                    <a href="error-rtl.html">Error Page RTL</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="team.html">Team</a>
+                        </li>
+                        <li>
+                            <a href="team-details.html">Team Details</a>
+                        </li>
+                        <li>
+                            <a href="project.html">Project</a>
+                        </li>
+                        <li>
+                            <a href="project-details.html">Project Details</a>
+                        </li>
+                        <li>
+                            <a href="faq.html">Faq Page</a>
+                        </li>
+                        <li>
+                            <a href="pricing.html">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="error.html">Error Page</a>
+                        </li>
+                    </ul>
+                </li>
+                <li className="menu-item-has-children">
+                    <a href="index.html#">Blog</a>
+                    <ul className="sub-menu">
+                        <li>
+                            <a href="blog-grid.html">Blog Grid</a>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog Standard</a>
+                        </li>
+                        <li>
+                            <a href="blog-details.html">Blog Details</a>
+                        </li>
+                        <li>
+                            <a href="blog-grid-rtl.html">Blog Grid RTL</a>
+                        </li>
+                        <li>
+                            <a href="blog-rtl.html">Blog Standard RTL</a>
+                        </li>
+                        <li>
+                            <a href="blog-details-rtl.html">Blog Details RTL</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<header className="as-header header-layout4">
+    <div className="header-top">
+        <div className="container">
+            <div className="row justify-content-center
+                  justify-content-lg-between align-items-center">
+                <div className="col-auto d-none d-lg-block">
+                    <p className="header-notice">
+                        Welcome to Dalky Digital &amp; Creative Agency
+                    </p>
+                </div>
+                <div className="col-auto">
+                    <div className="header-social">
+                        <span className="social-title">Follow Us : </span>
+                        <a href="https://www.facebook.com/">
+                            <i className="fab fa-facebook-f" />
+                        </a>{" "}
+                        <a href="https://www.twitter.com/">
+                            <i className="fab fa-twitter" />
+                        </a>{" "}
+                        <a href="https://www.linkedin.com/">
+                            <i className="fab fa-linkedin-in" />
+                        </a>{" "}
+                        <a href="https://www.instagram.com/">
+                            <i className="fab fa-instagram" />
+                        </a>{" "}
+                        <a href="https://www.youtube.com/">
+                            <i className="fab fa-youtube" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div className="menu-top">
+        <div className="container">
+            <div className="row
+                  align-items-center justify-content-between">
+                <div className="col-auto">
+                    <div className="header-logo">
+                        <a href="index.html">
+                            <img src="assets/img/logo2.svg" alt="Dalky" />
+                        </a>
+                    </div>
+                </div>
+                <div className="col-auto d-none d-lg-inline-block">
+                    <div className="header-info-wrap">
+                        <div className="header-info">
+                            <div className="header-info_icon icon-btn">
+                                <i className="fa-solid fa-phone" />
+                            </div>
+                            <div className="media-body">
+                                <span className="header-info_text">Call Anytime</span>{" "}
+                                <a className="header-info_link" href="tel:+18183683320">
+                                    (+181)-8368-3320
+                                </a>
+                            </div>
+                        </div>
+                        <div className="header-info">
+                            <div className="header-info_icon icon-btn">
+                                <i className="fa-solid fa-envelope" />
+                            </div>
+                            <div className="media-body">
+                                <span className="header-info_text">Send Email</span>
+                                <a className="header-info_link" href="mailto:info@dalky.com">
+                                    info@dalky.com
+                                </a>
+                            </div>
+                        </div>
+                        <div className="header-info">
+                            <div className="header-info_icon icon-btn">
+                                <i className="fa-solid fa-clock" />
+                            </div>
+                            <div className="media-body">
+                                <span className="header-info_text">Working Time</span>
+                                <p className="header-info_link">Mon - Fri: 09AM - 18PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-auto">
+                    <a href="contact.html" className="as-btn gr-btn d-lg-inline-block d-none">
+                        Let’s Talk Us
+                    </a>{" "}
+                    <button type="button" className="as-menu-toggle d-inline-block d-lg-none">
+                        <i className="far fa-bars" />
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div className="logo-bg" />
+    </div>
+    <div className="sticky-wrapper">
+        <div className="sticky-active">
+            <div className="container">
+                <div className="menu-area">
+                    <div className="row align-items-center
+                          justify-content-between">
+                        <div className="col-auto">
+                            <nav className="main-menu d-none
+                                  d-lg-inline-block">
+                                <ul>
+                                    <li className="menu-item-has-children">
+                                        <a href="index.html">Home</a>
+                                        <ul className="sub-menu">
+                                            <li>
+                                                <a href="index.html">Web Agency</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-2.html">Startup Agency</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-3.html">Marketing Agency</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-4.html">Digital Agency</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-rtl.html">Web Agency RTL</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-2-rtl.html">Startup Agency RTL</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-3-rtl.html">Marketing Agency RTL</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-4-rtl.html">Digital Agency RTL</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About Us</a>
+                                    </li>
+                                    <li className="menu-item-has-children">
+                                        <a href="index.html#">Services</a>
+                                        <ul className="sub-menu">
+                                            <li>
+                                                <a href="service.html">Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="service-details.html">Services Details</a>
+                                            </li>
+                                            <li>
+                                                <a href="service-rtl.html">Services RTL</a>
+                                            </li>
+                                            <li>
+                                                <a href="service-details-rtl.html">
+                                                    Services Details RTL
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li className="menu-item-has-children">
+                                        <a href="index.html#">Pages</a>
+                                        <ul className="sub-menu">
+                                            <li className="menu-item-has-children">
+                                                <a href="index.html#">RTL Pages</a>
+                                                <ul className="sub-menu">
+                                                    <li>
+                                                        <a href="about-rtl.html">About Us RTL</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="contact-rtl.html">Contact Us RTL</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="team-rtl.html">Team RTL</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="team-details-rtl.html">
+                                                            Team Details RTL
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="project-rtl.html">Project RTL</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="project-details-rtl.html">
+                                                            Project Details RTL
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="faq-rtl.html">Faq Page RTL</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="pricing-rtl.html">Pricing RTL</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="error-rtl.html">Error Page RTL</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="team.html">Team</a>
+                                            </li>
+                                            <li>
+                                                <a href="team-details.html">Team Details</a>
+                                            </li>
+                                            <li>
+                                                <a href="project.html">Project</a>
+                                            </li>
+                                            <li>
+                                                <a href="project-details.html">Project Details</a>
+                                            </li>
+                                            <li>
+                                                <a href="faq.html">Faq Page</a>
+                                            </li>
+                                            <li>
+                                                <a href="pricing.html">Pricing</a>
+                                            </li>
+                                            <li>
+                                                <a href="error.html">Error Page</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li className="menu-item-has-children">
+                                        <a href="index.html#">Blog</a>
+                                        <ul className="sub-menu">
+                                            <li>
+                                                <a href="blog-grid.html">Blog Grid</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog.html">Blog Standard</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog-details.html">Blog Details</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog-grid-rtl.html">Blog Grid RTL</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog-rtl.html">Blog Standard RTL</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog-details-rtl.html">Blog Details RTL</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div className="col-auto d-none d-lg-block">
+                            <div className="header-button">
+                                <button type="button" className="icon-btn
+                                      searchBoxToggler">
+                                    <i className="far
+                                          fa-search" />
+                                </button>{" "}
+                                <a href="https://www.google.com/maps" className="icon-btn">
+                                    <i className="far
+                                          fa-location-dot" />{" "}
+                                </a>
+                                <a href="index.html#" className="icon-btn
+                                      sideMenuToggler">
+                                    <i className="far
+                                          fa-bars" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div className="as-hero-wrapper hero-4">
+    <div className="as-hero-slide">
+        <div className="as-hero-bg" data-bg-src="assets/img/hero/hero_bg_4_1.jpg" style={{
+            backgroundImage: 'url("assets/img/hero/hero_bg_4_1.jpg")' }} />
+        <div className="container z-index-common">
+            <div className="hero-style4">
+                <span className="hero-subtitle" data-ani="slideinleft" data-ani-delay="0.0s">
+                    Welcome To Visit
+                </span>
+                <h1 className="hero-title" data-ani="slideinleft" data-ani-delay="0.1s">
+                    Dalky Creative &amp;
+                </h1>
+                <h1 className="hero-title" data-ani="slideinleft" data-ani-delay="0.2s">
+                    Digital
+                    <span className="gr-text">Agency</span>
+                </h1>
+                <p className="hero-text" data-ani="slideinleft" data-ani-delay="0.3s">
+                    Credibly harness compelling imperatives whereas seamless
+                    e-services. Continually worldwide via adaptive initiatives.
+                </p>
+                <div className="btn-group" data-ani="slideinleft" data-ani-delay="0.4s">
+                    <a href="service.html" className="as-btn gr-btn">
+                        Our Services
+                    </a>{" "}
+                    <a href="contact.html" className="as-btn style2">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section className="">
+    <div className="row gx-0 justify-content-center">
+        <div className="col-xxl-3 col-md-6 feature-card-wrap">
+            <div className="feature-card" data-bg-src="assets/img/bg/feature_card_bg.jpg">
+                <div className="feature-card_icon">
+                    <img src="assets/img/icon/feature_1_1.svg" alt="icon" />
+                </div>
+                <h3 className="feature-card_title">Digital Strategy</h3>
+                <p className="feature-card_text">
+                    Assertively maximize synergistic opportunities whereas resource
+                    maximizing quality.
+                </p>
+            </div>
+        </div>
+        <div className="col-xxl-3 col-md-6 feature-card-wrap">
+            <div className="feature-card" data-bg-src="assets/img/bg/feature_card_bg.jpg">
+                <div className="feature-card_icon">
+                    <img src="assets/img/icon/feature_1_2.svg" alt="icon" />
+                </div>
+                <h3 className="feature-card_title">Business Essentials</h3>
+                <p className="feature-card_text">
+                    Assertively maximize synergistic opportunities whereas resource
+                    maximizing quality.
+                </p>
+            </div>
+        </div>
+        <div className="col-xxl-3 col-md-6 feature-card-wrap">
+            <div className="feature-card" data-bg-src="assets/img/bg/feature_card_bg.jpg">
+                <div className="feature-card_icon">
+                    <img src="assets/img/icon/feature_1_3.svg" alt="icon" />
+                </div>
+                <h3 className="feature-card_title">Quick Support</h3>
+                <p className="feature-card_text">
+                    Assertively maximize synergistic opportunities whereas resource
+                    maximizing quality.
+                </p>
+            </div>
+        </div>
+        <div className="col-xxl-3 col-md-6 feature-card-wrap">
+            <div className="feature-card" data-bg-src="assets/img/bg/feature_card_bg.jpg">
+                <div className="feature-card_icon">
+                    <img src="assets/img/icon/feature_1_4.svg" alt="icon" />
+                </div>
+                <h3 className="feature-card_title">Strategic Planning</h3>
+                <p className="feature-card_text">
+                    Assertively maximize synergistic opportunities whereas resource
+                    maximizing quality.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<div className="space bg-top-right" data-bg-src="assets/img/bg/about_bg_2.png">
+    <div className="container">
+        <div className="row align-items-center">
+            <div className="col-xl-6 mb-xl-0
+                  mb-40">
+                <div className="img-box6">
+                    <div className="img1">
+                        <img src="assets/img/normal/about_4_1.png" alt="About" />
+                    </div>
+                    <div className="img2">
+                        <img src="assets/img/normal/about_4_2.png" alt="About" />
+                    </div>
+                    <div className="shape1">
+                        <img src="assets/img/normal/about_shape_4_1.png" alt="About" />
+                    </div>
+                    <div className="shape2">
+                        <img src="assets/img/normal/about_shape_4_2.png" alt="About" />
+                    </div>
+                </div>
+            </div>
+            <div className="col-xl-6 col-lg-10">
+                <div className="ps-xl-4 ms-xl-4">
+                    <div className="title-area mb-30">
+                        <span className="sub-title2">
+                            <img src="assets/img/shape/subtitle.svg" alt="Icon" /> ABOUT OUR
+                            COMPANY
+                        </span>
+                        <h2 className="sec-title">
+                            We're Digital Agency Works on Interacts
+                        </h2>
+                    </div>
+                    <p className="mt-n2
+                          mb-4">
+                        Holisticly whiteboard user-centric e-business before professional
+                        deliverables. Globally re-engineer cutting-edge information.
+                    </p>
+                    <div className="list-column2">
+                        <div className="ticklist">
+                            <ul>
+                                <li>Powerful software &amp; tools</li>
+                            </ul>
+                        </div>
+                        <div className="ticklist">
+                            <ul>
+                                <li>Training platform</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="about-grid-wrap">
+                        <div className="about-grid">
+                            <h3 className="about-grid_year">
+                                <span className="counter-number">25</span>
+                            </h3>
+                            <span className="about-grid_text">
+                                Years
+                                <br />
+                                Experience
+                            </span>
+                        </div>
+                        <div className="about-grid">
+                            <div className="about-grid_icon">
+                                <div className="gr-icon">
+                                    <img src="assets/img/icon/message.svg" alt="icon" />
+                                </div>
+                            </div>
+                            <div className="media-body">
+                                <h4 className="about-grid_title">
+                                    Have Queries? Click Below Link
+                                </h4>
+                                <span className="about-grid_link">
+                                    <i className="far fa-hand-point-right
+                                          me-2" />
+                                    <a href="faq.html" className="gr-link">
+                                        FAQ’S
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" className="as-btn gr-btn">
+                        About Us More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section className="space bg-smoke2" data-bg-src="assets/img/bg/service_bg_3.png" style={{
+    backgroundImage: 'url("assets/img/bg/service_bg_3.png")' }}>
+    <div className="container">
+        <div className="title-area text-center">
+            <span className="sub-title2">
+                <img src="assets/img/shape/subtitle.svg" alt="Icon" /> OUR SERVICES
+            </span>
+            <h2 className="sec-title">We Provide Quality Services</h2>
+            <p className="sec-text ms-auto me-auto">
+                Globally actualize premier testing procedures and user-centric
+                e-business. Holisticly productivate cross-media core competencies for
+                24/7.
+            </p>
+        </div>
+        <div className="row
+              slider-shadow as-carousel" data-slide-show={3} data-lg-slide-show={2} data-md-slide-show={2}
+            data-sm-slide-show={1} data-arrows="true">
+            <div className="col-md-6 col-xl-4">
+                <div className="service-block">
+                    <div className="service-block_img">
+                        <img src="assets/img/service/service_2_1.jpg" alt="service image" />
+                        <div className="service-block_icon">
+                            <img src="assets/img/icon/service_2_1.svg" alt="Icon" />
+                        </div>
+                    </div>
+                    <div className="service-block_content">
+                        <span className="service-block_cat">
+                            <i className="fa-light
+                                  fa-tags" />{" "}
+                            Creative Business
+                        </span>
+                        <h3 className="service-block_title box-title">
+                            <a href="service-details.html">Web Development</a>
+                        </h3>
+                        <p className="service-block_text">
+                            Professionally envisione multidisciplinary result rather than
+                            magnetic.
+                        </p>
+                        <a href="service-details.html" className="gr-link">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div className="col-md-6 col-xl-4">
+                <div className="service-block">
+                    <div className="service-block_img">
+                        <img src="assets/img/service/service_2_2.jpg" alt="service image" />
+                        <div className="service-block_icon">
+                            <img src="assets/img/icon/service_2_2.svg" alt="Icon" />
+                        </div>
+                    </div>
+                    <div className="service-block_content">
+                        <span className="service-block_cat">
+                            <i className="fa-light
+                                  fa-tags" />{" "}
+                            Creative Ideas
+                        </span>
+                        <h3 className="service-block_title box-title">
+                            <a href="service-details.html">UI/UX Designs</a>
+                        </h3>
+                        <p className="service-block_text">
+                            Professionally envisione multidisciplinary result rather than
+                            magnetic.
+                        </p>
+                        <a href="service-details.html" className="gr-link">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div className="col-md-6 col-xl-4">
+                <div className="service-block">
+                    <div className="service-block_img">
+                        <img src="assets/img/service/service_2_3.jpg" alt="service image" />
+                        <div className="service-block_icon">
+                            <img src="assets/img/icon/service_2_3.svg" alt="Icon" />
+                        </div>
+                    </div>
+                    <div className="service-block_content">
+                        <span className="service-block_cat">
+                            <i className="fa-light
+                                  fa-tags" />{" "}
+                            Business Ideas
+                        </span>
+                        <h3 className="service-block_title box-title">
+                            <a href="service-details.html">Product Management</a>
+                        </h3>
+                        <p className="service-block_text">
+                            Professionally envisione multidisciplinary result rather than
+                            magnetic.
+                        </p>
+                        <a href="service-details.html" className="gr-link">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className="text-center mt-40">
+            <p className="mb-n2">
+                Solution We Are Provide,{" "}
+                <a className="gr-link" href="service.html">
+                    Browse All Services
+                </a>
+            </p>
+        </div>
+    </div>
+</section>
+<section className="cta-sec" data-bg-src="assets/img/bg/cta_bg_5.jpg" style={{
+    backgroundImage: 'url("assets/img/bg/cta_bg_5.jpg")' }}>
+    <div className="container">
+        <div className="row gy-40 align-items-center
+              justify-content-between">
+            <div className="col-lg-6">
+                <h2 className="sec-title text-white mb-10">You Need Our support?</h2>
+                <p className="text-white mb-n2">
+                    Perfect Solution For Your Company.Conveniently grow long-term.
+                </p>
+            </div>
+            <div className="col-lg-auto">
+                <a href="tel:+19524357106" className="call-btn">
+                    <div className="play-btn style4">
+                        <i className="fas fa-phone" />
+                    </div>
+                    <div className="btn-content">
+                        <span className="btn-text
+                              text-white">
+                            CALL US
+                        </span>{" "}
+                        <span className="box-title gr-text">+19524357106</span>
+                    </div>
+                </a>
+            </div>
+            <div className="col-lg-auto">
+                <a href="contact.html" className="as-btn
+                      gr-btn">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<div className="space">
+    <div className="container">
+        <div className="row flex-row-reverse">
+            <div className="col-xl-6">
+                <div className="img-box7">
+                    <div className="img1">
+                        <img src="assets/img/normal/why_2.jpg" alt="image" />
+                    </div>
+                    <div className="as-box1">
+                        <div className="box-icon">
+                            <img src="assets/img/icon/user_star.svg" alt="icon" />
+                        </div>
+                        <div className="media-body">
+                            <h4 className="title  text-white mb-0">
+                                <span className="counter-number">10</span>k+
+                            </h4>
+                            <span className="text text-white">Clients Active</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="col-xl-6 pe-xl-5">
+                <div className="title-area mb-30">
+                    <span className="sub-title2">
+                        <img src="assets/img/shape/subtitle.svg" alt="Icon" /> Why choose us
+                    </span>
+                    <h2 className="sec-title">We deal with all kind of industries</h2>
+                </div>
+                <div className="tick-menu filter-menu-active">
+                    <button data-filter=".cat1" className="active" type="button">
+                        <a href="#.cat1">EXPERIENCE</a>
+                    </button>
+                    <button data-filter=".cat2" type="button">
+                        <a href="#.cat2">CREATIVE</a>
+                    </button>
+                    <button data-filter=".cat3" type="button">
+                        <a href="#.cat3">SKILL</a>
+                    </button>
+                </div>
+                <div className="filter-active-cat1">
+                    <div className="filter-item w-100 cat1" id=".cat1">
+                        <p className="mt-n2 mb-4">
+                            Continually deploy extensible quality vectors whereas strategic
+                            manufactured products. Collaboratively grow innovative. niche
+                            markets via unique value. Conveniently strategize.
+                        </p>
+                        <div className="experience-list">
+                            <div className="experience-list_img">
+                                <img src="assets/img/normal/experience_1.jpg" alt="experience" />
+                            </div>
+                            <div className="media-body">
+                                <h3 className="h4
+                                      box-title">
+                                    25+ Years Experience
+                                </h3>
+                                <p className="experience-list_text">
+                                    Dynamically strategize wireless data via go forward vortals.
+                                    Quickly productize client-centered value rather than
+                                    out-of-the-box.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div className="space-bottom">
+    <div className="container">
+        <div className="row gy-40
+              justify-content-between">
+            <div className="col-sm-6 col-xl-auto">
+                <div className="counter-card">
+                    <div className="counter-card_icon
+                          style2">
+                        <i className="fa-thin fa-file-check" />
+                    </div>
+                    <div className="media-body">
+                        <h2 className="counter-card_number text-title">
+                            <span className="counter-number">2.2</span>k
+                        </h2>
+                        <p className="counter-card_text text-body">Project Completed</p>
+                    </div>
+                </div>
+            </div>
+            <div className="col-sm-6 col-xl-auto">
+                <div className="counter-card">
+                    <div className="counter-card_icon style2">
+                        <i className="fa-thin fa-shield-check" />
+                    </div>
+                    <div className="media-body">
+                        <h2 className="counter-card_number text-title">
+                            <span className="counter-number">3.1</span>k
+                        </h2>
+                        <p className="counter-card_text text-body">Active Clients</p>
+                    </div>
+                </div>
+            </div>
+            <div className="col-sm-6 col-xl-auto">
+                <div className="counter-card">
+                    <div className="counter-card_icon style2">
+                        <i className="fa-thin fa-mug-hot" />
+                    </div>
+                    <div className="media-body">
+                        <h2 className="counter-card_number text-title">
+                            <span className="counter-number">1.9</span>k
+                        </h2>
+                        <p className="counter-card_text text-body">Cup of Coffee</p>
+                    </div>
+                </div>
+            </div>
+            <div className="col-sm-6 col-xl-auto">
+                <div className="counter-card">
+                    <div className="counter-card_icon style2">
+                        <i className="fa-thin fa-face-smile" />
+                    </div>
+                    <div className="media-body">
+                        <h2 className="counter-card_number text-title">
+                            <span className="counter-number">1.1</span>k
+                        </h2>
+                        <p className="counter-card_text text-body">Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    <div className="" data-pos-for=".process-sec" data-sec-pos="bottom-half">
+        <div className="container">
+            <div className="video-box4" data-overlay="overlay1" data-opacity={5}>
+                <img src="assets/img/normal/video_5.jpg" alt="video" />{" "}
+                <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" className="play-btn style5 popup-video">
+                    <i className="fas
+                          fa-play" />
+                </a>
+                <div className="video-content">
+                    <h2 className="h4 mb-10">Watch Our Company Activities</h2>
+                    <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" className="gr-link popup-video">
+                        Get Started
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section className="process-sec bg-smoke2 space" data-bg-src="assets/img/bg/process_bg_2.png">
+    <div className="container">
+        <div className="title-area text-center">
+            <span className="sub-title2">
+                <img src="assets/img/shape/subtitle.svg" alt="Icon" /> work prosses
+            </span>
+            <h2 className="sec-title">How We Work!</h2>
+            <p className="sec-text ms-auto me-auto">
+                Conveniently reconceptualize plug-and-play results through
+                multidisciplinary infomediaries. Appropriately simplify front-end
+                content.
+            </p>
+        </div>
+        <div className="row gy-40
+              justify-content-center">
+            <div className="col-md-6 col-lg-4
+                  process-box-wrap">
+                <div className="process-box">
+                    <div className="process-box_icon" data-bg-src="assets/img/bg/process_icon_bg.svg">
+                        <img src="assets/img/icon/process_2_1.svg" alt="icon" />
+                        <div className="process-box_number">01</div>
+                    </div>
+                    <h2 className="process-box_title box-title">Business Planning</h2>
+                    <p className="process-box_text">
+                        Professionally predominate technically sound imperatives and
+                        emerging content. Globally synergize future.
+                    </p>
+                </div>
+            </div>
+            <div className="col-md-6 col-lg-4 process-box-wrap">
+                <div className="process-box">
+                    <div className="process-box_icon" data-bg-src="assets/img/bg/process_icon_bg.svg">
+                        <img src="assets/img/icon/process_2_2.svg" alt="icon" />
+                        <div className="process-box_number">02</div>
+                    </div>
+                    <h2 className="process-box_title box-title">Market research</h2>
+                    <p className="process-box_text">
+                        Professionally predominate technically sound imperatives and
+                        emerging content. Globally synergize future.
+                    </p>
+                </div>
+            </div>
+            <div className="col-md-6 col-lg-4 process-box-wrap">
+                <div className="process-box">
+                    <div className="process-box_icon" data-bg-src="assets/img/bg/process_icon_bg.svg">
+                        <img src="assets/img/icon/process_2_3.svg" alt="icon" />
+                        <div className="process-box_number">03</div>
+                    </div>
+                    <h2 className="process-box_title box-title">Cognitive Solution</h2>
+                    <p className="process-box_text">
+                        Professionally predominate technically sound imperatives and
+                        emerging content. Globally synergize future.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section className="space" data-bg-src="assets/img/bg/team_bg_3.jpg" style={{
+    backgroundImage: 'url("assets/img/bg/team_bg_3.jpg")' }}>
+    <div className="container">
+        <div className="row justify-content-between">
+            <div className="col-lg-auto">
+                <div className="title-area">
+                    <span className="sub-title2">
+                        <img src="assets/img/shape/subtitle.svg" alt="Icon" /> team
+                        members
+                    </span>
+                    <h2 className="sec-title text-white">Meet Our Expart</h2>
+                </div>
+            </div>
+            <div className="col-xl-6 col-lg-7 ps-xl-5">
+                <div className="sec-btn">
+                    <p className="sec-quote text-white">
+                        Seamlessly reinvent distributed mindshare after resource-leveling
+                        technology. Seamlessly restore just in time deliverables without
+                        integrated outsourcing. Interactively transition team.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div className="row as-carousel" data-slide-show={4} data-lg-slide-show={3} data-md-slide-show={2}
+            data-sm-slide-show={2} data-xs-slide-show={1} data-arrows="true">
+            <div className="col-sm-6 col-lg-4 col-xl-3">
+                <div className="as-team team-block">
+                    <div className="team-img">
+                        <img src="assets/img/team/team_4_1.jpg" alt="Team" />
+                        <div className="as-social gr-social">
+                            <a target="_blank" href="https://facebook.com/">
+                                <i className="fab fa-facebook-f" />
+                            </a>
+                            <a target="_blank" href="https://twitter.com/">
+                                <i className="fab fa-twitter" />
+                            </a>{" "}
+                            <a target="_blank" href="https://instagram.com/">
+                                <i className="fab fa-instagram" />
+                            </a>{" "}
+                            <a target="_blank" href="https://linkedin.com/">
+                                <i className="fab fa-linkedin-in" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="team-content">
+                        <h3 className="team-title">
+                            <a href="team-details.html">Imon Hossain</a>
+                        </h3>
+                        <span className="team-desig">UI/UX Designer</span>
+                    </div>
+                </div>
+            </div>
+            <div className="col-sm-6 col-lg-4 col-xl-3">
+                <div className="as-team
+                      team-block">
+                    <div className="team-img">
+                        <img src="assets/img/team/team_4_2.jpg" alt="Team" />
+                        <div className="as-social gr-social">
+                            <a target="_blank" href="https://facebook.com/">
+                                <i className="fab fa-facebook-f" />
+                            </a>
+                            <a target="_blank" href="https://twitter.com/">
+                                <i className="fab fa-twitter" />
+                            </a>{" "}
+                            <a target="_blank" href="https://instagram.com/">
+                                <i className="fab fa-instagram" />
+                            </a>{" "}
+                            <a target="_blank" href="https://linkedin.com/">
+                                <i className="fab fa-linkedin-in" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="team-content">
+                        <h3 className="team-title">
+                            <a href="team-details.html">Jenifer Lopez</a>
+                        </h3>
+                        <span className="team-desig">Programmer</span>
+                    </div>
+                </div>
+            </div>
+            <div className="col-sm-6 col-lg-4 col-xl-3">
+                <div className="as-team
+                      team-block">
+                    <div className="team-img">
+                        <img src="assets/img/team/team_4_3.jpg" alt="Team" />
+                        <div className="as-social gr-social">
+                            <a target="_blank" href="https://facebook.com/">
+                                <i className="fab fa-facebook-f" />
+                            </a>
+                            <a target="_blank" href="https://twitter.com/">
+                                <i className="fab fa-twitter" />
+                            </a>{" "}
+                            <a target="_blank" href="https://instagram.com/">
+                                <i className="fab fa-instagram" />
+                            </a>{" "}
+                            <a target="_blank" href="https://linkedin.com/">
+                                <i className="fab fa-linkedin-in" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="team-content">
+                        <h3 className="team-title">
+                            <a href="team-details.html">Michel Richard</a>
+                        </h3>
+                        <span className="team-desig">Web Developer</span>
+                    </div>
+                </div>
+            </div>
+            <div className="col-sm-6 col-lg-4 col-xl-3">
+                <div className="as-team
+                      team-block">
+                    <div className="team-img">
+                        <img src="assets/img/team/team_4_4.jpg" alt="Team" />
+                        <div className="as-social gr-social">
+                            <a target="_blank" href="https://facebook.com/">
+                                <i className="fab fa-facebook-f" />
+                            </a>
+                            <a target="_blank" href="https://twitter.com/">
+                                <i className="fab fa-twitter" />
+                            </a>{" "}
+                            <a target="_blank" href="https://instagram.com/">
+                                <i className="fab fa-instagram" />
+                            </a>{" "}
+                            <a target="_blank" href="https://linkedin.com/">
+                                <i className="fab fa-linkedin-in" />
+                            </a>
+                        </div>
+                    </div>
+                    <div className="team-content">
+                        <h3 className="team-title">
+                            <a href="team-details.html">Sanjida Cruze</a>
+                        </h3>
+                        <span className="team-desig">Digital Marketer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div className="space">
+    <div className="container">
+        <div className="row
+              justify-content-between">
+            <div className="col-xl-auto
+                  text-xl-start text-center">
+                <div className="custom-box1">
+                    <div className="title-area mb-30">
+                        <span className="sub-title2">
+                            <img src="assets/img/shape/subtitle.svg" alt="Icon" /> More
+                            About Us
+                        </span>
+                        <h2 className="sec-title">
+                            Quality &amp; Experience Digital Agency
+                        </h2>
+                    </div>
+                    <p className="mt-n2 mb-30">
+                        Continually deploy extensible quality vectors whereas strategic
+                        manufactured products. Collaboratively grow innovative.
+                    </p>
+                    <div className="rounded-10">
+                        <img className="w-100" src="assets/img/normal/about_5_1.jpg" alt="about" />
+                    </div>
+                </div>
+            </div>
+            <div className="col-xl-auto mt-5 mt-xl-0">
+                <div className="custom-box2">
+                    <div className="tab-menu3 filter-menu-active">
+                        <button data-filter=".cat1" className="active" type="button">
+                            our Mission
+                        </button>
+                        <button data-filter=".cat2" type="button">
+                            Our Vission
+                        </button>{" "}
+                        <button data-filter=".cat3" type="button">
+                            our History
+                        </button>{" "}
+                        <button data-filter=".cat4" type="button">
+                            Award win
+                        </button>
+                    </div>
+                    <div className="filter-active-cat1">
+                        <div className="filter-item w-100 cat1">
+                            <h3 className="h4 mb-20">
+                                We Creating Value Through Business
+                            </h3>
+                            <p className="mb-30">
+                                Energistically deploy frictionless catalysts for change
+                                vis-a-vis ubiquitous benefits. Phosfluorescently
+                                disintermediate 24/365 benefits whereas resource maximizing
+                                manufactured products. Compellingly communicate user-centric
+                                relationships without goal-oriented interfaces.
+                            </p>
+                            <div className="mission-list">
+                                <div className="rounded-10">
+                                    <img src="assets/img/normal/mission_1.jpg" alt="Mission" />
+                                </div>
+                                <div className="ticklist">
+                                    <ul>
+                                        <li>Powerful software &amp; tools</li>
+                                        <li>Financial Growth</li>
+                                        <li>Dedicated Team member</li>
+                                        <li>Maecenas consectetur</li>
+                                        <li>We drink our own kool-aid</li>
+                                        <li>In hac habitasse dictumst</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section className="space">
+    <div className="container">
+        <div className="title-area
+              text-center">
+            <span className="sub-title2">
+                <img src="assets/img/shape/subtitle.svg" alt="Icon" /> blog &amp; news
+            </span>
+            <h2 className="sec-title">Latest News &amp; Blog</h2>
+            <p className="sec-text ms-auto me-auto">
+                Interactively whiteboard interdependent expertise vis-a-vis
+                process-centric vortals. Appropriately implement future-proof
+                potentialities.
+            </p>
+        </div>
+        <div className="row
+              slider-shadow as-carousel" data-slide-show={3} data-ml-slide-show={2} data-lg-slide-show={2}
+            data-md-slide-show={2} data-sm-slide-show={1} data-arrows="true">
+            <div className="col-md-6 col-xl-4">
+                <div className="blog-box">
+                    <div className="blog-img">
+                        <img src="assets/img/blog/blog_2_1.jpg" alt="blog
+                              image" />
+                    </div>
+                    <div className="blog-content">
+                        <a className="date" href="blog.html">
+                            <span className="gr-text">12</span> May
+                        </a>
+                        <div className="blog-meta">
+                            <a href="blog.html">
+                                <i className="far fa-tag" />
+                                Marketing
+                            </a>
+                            <a href="blog.html">
+                                <i className="fal
+                                      fa-comment" />
+                                Comments (3)
+                            </a>
+                        </div>
+                        <h3 className="blog-title box-title">
+                            <a href="blog-details.html">
+                                Delivering the best digital marketing in 2022
+                            </a>
+                        </h3>
+                        <p className="blog-text">
+                            Phosfluorescently leverage existing future proof bandwidth
+                            rather
+                        </p>
+                        <a href="blog-details.html" className="gr-link">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div className="col-md-6 col-xl-4">
+                <div className="blog-box">
+                    <div className="blog-img">
+                        <img src="assets/img/blog/blog_2_2.jpg" alt="blog
+                              image" />
+                    </div>
+                    <div className="blog-content">
+                        <a className="date" href="blog.html">
+                            <span className="gr-text">14</span> May
+                        </a>
+                        <div className="blog-meta">
+                            <a href="blog.html">
+                                <i className="far fa-tag" />
+                                UI/UX Design
+                            </a>
+                            <a href="blog.html">
+                                <i className="fal
+                                      fa-comment" />
+                                Comments (3)
+                            </a>
+                        </div>
+                        <h3 className="blog-title box-title">
+                            <a href="blog-details.html">
+                                The best UX design blogs for industry project
+                            </a>
+                        </h3>
+                        <p className="blog-text">
+                            Getting start wit leverage existing future proof bandwidth
+                            rather than
+                        </p>
+                        <a href="blog-details.html" className="gr-link">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div className="col-md-6 col-xl-4">
+                <div className="blog-box">
+                    <div className="blog-img">
+                        <img src="assets/img/blog/blog_2_3.jpg" alt="blog
+                              image" />
+                    </div>
+                    <div className="blog-content">
+                        <a className="date" href="blog.html">
+                            <span className="gr-text">15</span> May
+                        </a>
+                        <div className="blog-meta">
+                            <a href="blog.html">
+                                <i className="far fa-tag" />
+                                Web Design
+                            </a>
+                            <a href="blog.html">
+                                <i className="fal
+                                      fa-comment" />
+                                Comments (3)
+                            </a>
+                        </div>
+                        <h3 className="blog-title box-title">
+                            <a href="blog-details.html">
+                                Trusted by The world’s best organizations of
+                            </a>
+                        </h3>
+                        <p className="blog-text">
+                            Modern House at leverage existing future proof rather than
+                            of-manusa.
+                        </p>
+                        <a href="blog-details.html" className="gr-link">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer className="footer-wrapper footer-layout2" data-bg-src="assets/img/bg/footer_bg_4.jpg">
+    <div className="footer-top">
+        <div className="container">
+            <div className="row align-items-center">
+                <div className="col-xl-3">
+                    <div className="footer-logo2">
+                        <a href="index.html">
+                            <img src="assets/img/logo-white3.svg" alt="Dalky" />
+                        </a>
+                    </div>
+                </div>
+                <div className="col-xl-9">
+                    <div className="newsletter-wrap">
+                        <div className="newsletter-content">
+                            <h3 className="newsletter-title">News Subscription</h3>
+                            <p className="newsletter-text">
+                                Get Latest Deals from Waker’s Inbox &amp; Subscribe Now
+                            </p>
+                        </div>
+                        <form className="newsletter-form style3">
+                            <div className="form-group">
+                                <input className="form-control style2" type="email" placeholder="Email
+                                      Address" required="" />{" "}
+                                <i className="fal
+                                      fa-envelope" />
+                            </div>
+                            <button type="submit" className="as-btn gr-btn">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div className="widget-area">
+        <div className="container">
+            <div className="row
+                  justify-content-between">
+                <div className="col-md-6 col-xl-4">
+                    <div className="widget footer-widget">
+                        <h3 className="widget_title">About Company</h3>
+                        <div className="as-widget-about">
+                            <p className="about-text">
+                                Professionally redefine transparent ROI through low-risk
+                                high-yield gone.
+                            </p>
+                            <p className="footer-info style2">
+                                <i className="fas
+                                      fa-location-dot" />{" "}
+                                18013 Northridge, CA 91325, United States
+                            </p>
+                            <p className="footer-info style2">
+                                <i className="fas
+                                      fa-envelope" />{" "}
+                                <a href="mailto:info.example@dalky.com" className="info-box_link">
+                                    info.example@dalky.com
+                                </a>
+                            </p>
+                            <p className="footer-info style2">
+                                <i className="fas
+                                      fa-phone" />{" "}
+                                <a href="tel:+10987654321" className="info-box_link">
+                                    +(1) 098 765 4321
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-6 col-xl-auto">
+                    <div className="widget
+                          widget_nav_menu footer-widget">
+                        <h3 className="widget_title">Quick Link</h3>
+                        <div className="menu-all-pages-container">
+                            <ul className="menu">
+                                <li>
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="service.html">Services</a>
+                                </li>
+                                <li>
+                                    <a href="project.html">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="team.html">Team</a>
+                                </li>
+                                <li>
+                                    <a href="blog.html">Blog Post</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-6 col-xl-auto">
+                    <div className="widget
+                          widget_nav_menu footer-widget">
+                        <h3 className="widget_title">Services</h3>
+                        <div className="menu-all-pages-container">
+                            <ul className="menu">
+                                <li>
+                                    <a href="service-details.html">Web Development</a>
+                                </li>
+                                <li>
+                                    <a href="service-details.html">Business Development</a>
+                                </li>
+                                <li>
+                                    <a href="service-details.html">Product Management</a>
+                                </li>
+                                <li>
+                                    <a href="service-details.html">UI/UX Design</a>
+                                </li>
+                                <li>
+                                    <a href="service-details.html">Digital Marketing</a>
+                                </li>
+                                <li>
+                                    <a href="service-details.html">Branding Designs</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className="col-md-6 col-xl-auto">
+                    <div className="widget
+                          footer-widget">
+                        <h3 className="widget_title">Recent Posts</h3>
+                        <div className="recent-post-wrap">
+                            <div className="recent-post">
+                                <div className="media-img">
+                                    <a href="blog-details.html">
+                                        <img src="assets/img/blog/recent-post-2-1.jpg" alt="Blog Image" />
+                                    </a>
+                                </div>
+                                <div className="media-body">
+                                    <h4 className="post-title">
+                                        <a className="text-inherit" href="blog-details.html">
+                                            App Promotes Sales of Markets it.
+                                        </a>
+                                    </h4>
+                                    <div className="recent-post-meta">
+                                        <a href="blog.html">
+                                            <i className="fal
+                                                  fa-calendar-days" />
+                                            21 June, 2022
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="recent-post">
+                                <div className="media-img">
+                                    <a href="blog-details.html">
+                                        <img src="assets/img/blog/recent-post-2-2.jpg" alt="Blog Image" />
+                                    </a>
+                                </div>
+                                <div className="media-body">
+                                    <h4 className="post-title">
+                                        <a className="text-inherit" href="blog-details.html">
+                                            Best Define World IT Digital Solution
+                                        </a>
+                                    </h4>
+                                    <div className="recent-post-meta">
+                                        <a href="blog.html">
+                                            <i className="fal
+                                                  fa-calendar-days" />
+                                            22 June, 2022
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div className="copyright-wrap">
+        <div className="container">
+            <div className="row
+                  justify-content-between align-items-center">
+                <div className="col-lg-6">
+                    <p className="copyright-text">
+                        Copyright
+                        <i className="fal fa-copyright" /> 2022{" "}
+                        <a href="https://themeforest.net/user/angfuz_soft">Angfuzsoft</a>.
+                        All Rights Reserved.
+                    </p>
+                </div>
+                <div className="col-lg-6 text-end d-none d-lg-block">
+                    <div className="footer-links">
+                        <ul>
+                            <li>
+                                <a href="about.html">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="about.html">Terms of Use</a>
+                            </li>
+                            <li>
+                                <a href="about.html">Cookie Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<a href="index.html#" className="scrollToTop scroll-btn">
+    <i className="far
+          fa-long-arrow-up" />
+</a>
