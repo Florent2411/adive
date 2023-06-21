@@ -62,7 +62,7 @@ export default function Home(props) {
           {/* <Agency /> */}
           <Services />
           <Process/>
-          <Projects />
+          {/* <Projects /> */}
           <Achievements />
           <Team/>
           <News />

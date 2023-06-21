@@ -84,7 +84,7 @@ export default function About(props) {
                                     {/* Skill Item */}
                                     <div className="skill-item">
                                         <div className="skill-header clearfix">
-                                            <div className="skill-title">• Formation professionnelle</div>
+                                            <div className="skill-title">Formation professionnelle</div>
                                         </div>
                                         <div className="skill-bar">
                                             <div className="bar-inner">

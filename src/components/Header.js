@@ -23,10 +23,10 @@ export default function Header(props) {
                                         English &nbsp;<span className="fa fa-angle-down" />
                                     </button>
                                     <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton2">
-                                        <li><a className="dropdown-item" href="index-2.html#">French</a></li>
-                                        <li><a className="dropdown-item" href="index-2.html#">Arbic</a></li>
-                                        <li><a className="dropdown-item" href="index-2.html#">Urdu</a></li>
-                                        <li><a className="dropdown-item" href="index-2.html#">Hindi</a></li>
+                                        <li><a className="dropdown-item" href="#">French</a></li>
+                                        <li><a className="dropdown-item" href="#">Arbic</a></li>
+                                        <li><a className="dropdown-item" href="#">Urdu</a></li>
+                                        <li><a className="dropdown-item" href="#">Hindi</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -40,7 +40,7 @@ export default function Header(props) {
                             {/* Logo */}
                             <div>
                                 <div><a href="index.html"><img src="assets/images/adiveLogo.png" alt title
-                                width={70} /></a></div>
+                                    width={70} /></a></div>
                             </div>
                             {/* Nav Outer */}
                             <div className="nav-outer clearfix">
@@ -58,11 +58,19 @@ export default function Header(props) {
                                     </div>
                                     <div className="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                                         <ul className="navigation clearfix">
-                                            <li className="current dropdown"><a href="index-2.html#">Home</a></li>
-                                            <li className="dropdown"><a href="index-2.html#">About</a></li>
-                                            <li className="dropdown"><a href="index-2.html#">Services</a></li>
-                                            <li className="dropdown"><a href="index-2.html#">Projects</a></li>
-                                            <li className="dropdown"><a href="index-2.html#">Blog</a></li>
+                                            <li className="current dropdown"><a href="#">Accueil</a></li>
+                                            <li className="dropdown"><a href="#">A Propos</a></li>
+                                            <li className="dropdown"><a href="#">Services</a>
+                                                <ul>
+                                                    <li><a href="projects.html">Emploi</a></li>
+                                                    <li><a href="projects-detail.html">Formation professionnelle</a></li>
+                                                    <li><a href="projects.html">Actualités</a></li>
+                                                    <li><a href="projects-detail.html">Stratégie du Marketing digital</a></li>
+                                                    <li><a href="projects.html">Rédaction de contenu web et Conception graphique</a></li>
+                                                    <li><a href="projects-detail.html">Prospection</a></li>
+                                                    <li><a href="projects.html">Livraison</a></li>
+                                                    <li><a href="projects-detail.html">Vente en ligne</a></li>
+                                                </ul></li>
                                             <li><a href="contact.html">Contact</a></li>
                                         </ul>
                                     </div>

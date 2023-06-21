@@ -10,7 +10,8 @@ export default function Loader(props) {
           <div className="preloader-close">x</div>
           <div id="handle-preloader" className="handle-preloader">
             <div className="animation-preloader">
-              <div className="spinner" />
+              <img src="assets/images/adiveLogo.png" alt title width={300}/>
+              {/* <div className="spinner" /> */}
               <div className="txt-loading">
                 <span data-text-preloader="A" className="letters-loading">
                   A

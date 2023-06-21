@@ -1,7 +1,7 @@
 /* Preloader */
 
 .handle-preloader{
-	background-color: #FCA91B;
+	background-color: var(--main-color);
 }
 
 .handle-preloader {

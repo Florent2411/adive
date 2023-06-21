@@ -22,7 +22,7 @@ export default function Process(props) {
                   <span className="icon"><img src="assets/images/icons/feature-1.png" alt /></span>
                 </div>
                 <h3><a href="service-detail.html">Business Planning</a></h3>
-                <div className="text">Trusted results Business Consulting Unlimited Access. Always Facts. Privacy The Best Resources.  Answers.</div>
+                <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                 <a className="read-more" href="service-detail.html">Read More</a>
               </div>
             </div>
@@ -33,7 +33,7 @@ export default function Process(props) {
                   <span className="icon"><img src="assets/images/icons/feature-2.png" alt /></span>
                 </div>
                 <h3><a href="service-detail.html">Marketing Work</a></h3>
-                <div className="text">Trusted results Business Consulting Unlimited Access. Always Facts. Privacy The Best Resources.  Answers.</div>
+                <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                 <a className="read-more" href="service-detail.html">Read More</a>
               </div>
             </div>
@@ -44,7 +44,7 @@ export default function Process(props) {
                   <span className="icon"><img src="assets/images/icons/feature-3.png" alt /></span>
                 </div>
                 <h3><a href="service-detail.html">Move Foroword</a></h3>
-                <div className="text">Trusted results Business Consulting Unlimited Access. Always Facts. Privacy The Best Resources.  Answers.</div>
+                <div className="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                 <a className="read-more" href="service-detail.html">Read More</a>
               </div>
             </div>
