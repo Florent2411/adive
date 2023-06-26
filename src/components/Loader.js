@@ -2,38 +2,11 @@ import React from "react";
 
 export default function Loader(props) {
 
-  return (
-    <>
-      {/* Preloader */}
-      <div className="loader-wrap">
-        <div className="preloader">
-          <div className="preloader-close">x</div>
-          <div id="handle-preloader" className="handle-preloader">
-            <div className="animation-preloader">
-              <img src="assets/images/adiveLogo.png" alt title width={300}/>
-              {/* <div className="spinner" /> */}
-              <div className="txt-loading">
-                <span data-text-preloader="A" className="letters-loading">
-                  A
-                </span>
-                <span data-text-preloader="D" className="letters-loading">
-                  D
-                </span>
-                <span data-text-preloader="I" className="letters-loading">
-                  I
-                </span>
-                <span data-text-preloader="V" className="letters-loading">
-                  V
-                </span>
-                <span data-text-preloader="E" className="letters-loading">
-                  E
-                </span>
-              </div>
+    return (
+        <>
+            <div className="preloader"><button className="as-btn style3 preloaderCls">Annuler le chargement</button>
+                <div className="preloader-inner"><span className="loader" /></div>
             </div>
-          </div>
-        </div>
-      </div>
-      {/* Preloader End */}
-    </>
-  );
+        </>
+    );
 }
