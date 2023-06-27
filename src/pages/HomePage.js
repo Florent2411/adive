@@ -196,41 +196,34 @@ export default function HomePage(props) {
         </div>
       </div>
 
-      <div className="space" style={{backgroundImage: "url(assets/img/bg/testi_bg_3.png)"}}>
+      <div className="space" style={{ backgroundImage: "url(assets/img/bg/testi_bg_3.png)" }}>
         <div className="container">
           <div className="row
               justify-content-between">
             <div className="col-xl-auto
                   text-xl-start text-center">
               <div className="custom-box1">
-                <div className="title-area mb-30"><span className="sub-title2"><img src="assets/img/shape/subtitle.svg" alt="Icon" /> More About Us</span>
-                  <h2 className="sec-title">Quality &amp; Experience
-                    Digital Agency</h2>
+                <div className="title-area mb-30"><span className="sub-title2"><img src="assets/img/shape/subtitle.svg" alt="Icon" /> En savoir plus sur nous</span>
+                  <h2 className="sec-title">Agence Digitale Qualité & Expérience</h2>
                 </div>
-                <p className="mt-n2
-                          mb-30">Continually deploy extensible quality
-                  vectors whereas strategic manufactured products.
-                  Collaboratively grow innovative.</p>
+                <p className="mt-n2 mb-30">Nous sommes une entreprise spécialisée dans la fourniture de services liés à la transformation digitale et à l'optimisation des stratégies de vente en ligne. </p>
                 <div className="rounded-10"><img className="w-100" src="assets/img/normal/about_5_1.jpg" alt="about" />
                 </div>
               </div>
             </div>
             <div className="col-xl-auto mt-5 mt-xl-0">
               <div className="custom-box2">
-                <div className="tab-menu3
-                          filter-menu-active">
-                  <button onClick={() => handleTabClick('tab1')} className={activeTab === 'tab1' ? 'active' : ''} type="button">our Mission</button>
-                  <button onClick={() => handleTabClick('tab2')} className={activeTab === 'tab2' ? 'active' : ''} type="button">Our Vission</button>
-                  <button onClick={() => handleTabClick('tab3')} className={activeTab === 'tab3' ? 'active' : ''} type="button">our History</button>
-                  <button onClick={() => handleTabClick('tab4')} className={activeTab === 'tab4' ? 'active' : ''} type="button">Award win</button>
+                <div className="tab-menu3 filter-menu-active">
+                  <button onClick={() => handleTabClick('tab1')} className={activeTab === 'tab1' ? 'active' : ''} type="button">Notre Mission</button>
+                  <button onClick={() => handleTabClick('tab2')} className={activeTab === 'tab2' ? 'active' : ''} type="button">Notre Vision</button>
+                  <button onClick={() => handleTabClick('tab3')} className={activeTab === 'tab3' ? 'active' : ''} type="button">Notre Histoire</button>
+                  <button onClick={() => handleTabClick('tab3')} className={activeTab === 'tab3' ? 'active' : ''} type="button">Nos Valeurs</button>
                 </div>
                 <div className="filter-active-cat1">
                   {
                     activeTab === 'tab1' &&
                     <div className="filter-item w-100 cat1">
-                      <h3 className="h4
-                                  mb-20">We Creating Value Through
-                        Business</h3>
+                      <h3 className="h4 mb-20">Notre Mission</h3>
                       <p className="mb-30">Energistically
                         deploy frictionless catalysts for change
                         vis-a-vis ubiquitous benefits.
@@ -264,9 +257,7 @@ export default function HomePage(props) {
                   {
                     activeTab === 'tab2' &&
                     <div className="filter-item w-100 cat2">
-                      <h3 className="h4
-                                  mb-20">We work Creating Best For
-                        Customer</h3>
+                      <h3 className="h4 mb-20">Notre Vision</h3>
                       <p className="mb-30">Energistically
                         deploy frictionless catalysts for change
                         vis-a-vis ubiquitous benefits.
@@ -301,8 +292,7 @@ export default function HomePage(props) {
                     activeTab === 'tab3' &&
                     <div className="filter-item w-100 cat3">
                       <h3 className="h4
-                                  mb-20">Have More Than 23 Years
-                        Experience</h3>
+                                  mb-20">Notre Histoire</h3>
                       <p className="mb-30">Energistically
                         deploy frictionless catalysts for change
                         vis-a-vis ubiquitous benefits.
@@ -334,11 +324,11 @@ export default function HomePage(props) {
                   }
                   {
                     activeTab === 'tab4' &&
-                    <div className="filter-item w-100 cat4">
+                    <div className="filter-item w-100 cat3">
                       <h3 className="h4
-                                  mb-20">Many Trusted Award We Have Won</h3>
-                      <p className="mb-30">Energistically deploy
-                        frictionless catalysts for change
+                                  mb-20">Nos Valeurs</h3>
+                      <p className="mb-30">Energistically
+                        deploy frictionless catalysts for change
                         vis-a-vis ubiquitous benefits.
                         Phosfluorescently disintermediate 24/365
                         benefits whereas resource maximizing
@@ -346,8 +336,7 @@ export default function HomePage(props) {
                         communicate user-centric relationships
                         without goal-oriented interfaces.</p>
                       <div className="mission-list">
-                        <div className="rounded-10"><img src="/assets/img/normal/mission_4.jpg" alt="Mission" />
-                        </div>
+                        <div className="rounded-10"><img src="assets/img/normal/mission_3.jpg" alt="Mission" /></div>
                         <div className="ticklist">
                           <ul>
                             <li>Powerful
