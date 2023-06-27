@@ -33,7 +33,7 @@ export default function AboutPage(props) {
                                     </div>
                                     <div className="about-box1">
                                         <div className="icon"><img src="assets/img/icon/award_1.svg" alt="icon" /></div>
-                                        <p className="text">Won best Award<br />in 2022</p>
+                                        <p className="text">Meilleure Agence</p>
                                     </div>
                                 </div>
                             </div>

@@ -214,41 +214,30 @@ export default function HomePage(props) {
             <div className="col-xl-auto mt-5 mt-xl-0">
               <div className="custom-box2">
                 <div className="tab-menu3 filter-menu-active">
-                  <button onClick={() => handleTabClick('tab1')} className={activeTab === 'tab1' ? 'active' : ''} type="button">Mission</button>
-                  <button onClick={() => handleTabClick('tab2')} className={activeTab === 'tab2' ? 'active' : ''} type="button">Vision</button>
-                  <button onClick={() => handleTabClick('tab3')} className={activeTab === 'tab3' ? 'active' : ''} type="button">Histoire</button>
-                  <button onClick={() => handleTabClick('tab4')} className={activeTab === 'tab4' ? 'active' : ''} type="button">Valeurs</button>
+                  <button onClick={() => handleTabClick('tab1')} className={activeTab === 'tab1' ? 'active' : ''} type="button">Notre Mission</button>
+                  <button onClick={() => handleTabClick('tab2')} className={activeTab === 'tab2' ? 'active' : ''} type="button">Notre Vision</button>
+                  <button onClick={() => handleTabClick('tab3')} className={activeTab === 'tab3' ? 'active' : ''} type="button"> Nos Valeurs</button>
+                  <button onClick={() => handleTabClick('tab4')} className={activeTab === 'tab4' ? 'active' : ''} type="button"> Histoire</button>
                 </div>
                 <div className="filter-active-cat1">
                   {
                     activeTab === 'tab1' &&
                     <div className="filter-item w-100 cat1">
                       <h3 className="h4 mb-20">Notre Mission</h3>
-                      <p className="mb-30">Energistically
-                        deploy frictionless catalysts for change
-                        vis-a-vis ubiquitous benefits.
-                        Phosfluorescently disintermediate 24/365
-                        benefits whereas resource maximizing
-                        manufactured products. Compellingly
-                        communicate user-centric relationships
-                        without goal-oriented interfaces.</p>
+                      <p className="mb-30">En tant qu'agence du digital et de la vente, notre mission est de fournir des solutions et 
+                      des services numériques pour aider nos clients à atteindre leurs objectifs de vente en ligne. Notre rôle principal 
+                      consiste à utiliser les outils et les stratégies du marketing numérique pour accroître la visibilité en ligne de nos 
+                      clients, générer du trafic qualifié vers leurs sites web et convertir ce trafic en ventes.</p>
                       <div className="mission-list">
                         <div className="rounded-10"><img src="assets/img/normal/mission_1.jpg" alt="Mission" />
                         </div>
                         <div className="ticklist">
                           <ul>
-                            <li>Powerful
-                              software &amp; tools</li>
-                            <li>Financial
-                              Growth</li>
-                            <li>Dedicated
-                              Team member</li>
-                            <li>Maecenas
-                              consectetur</li>
-                            <li>We drink
-                              our own kool-aid</li>
-                            <li>In
-                              hac habitasse dictumst</li>
+                            <li>Stratégie numérique</li>
+                            <li>Conception de sites web</li>
+                            <li>Optimisation des conversions</li>
+                            <li>Marketing de contenu</li>
+                            <li>Analyse et suivi des performances</li>
                           </ul>
                         </div>
                       </div>
@@ -258,65 +247,32 @@ export default function HomePage(props) {
                     activeTab === 'tab2' &&
                     <div className="filter-item w-100 cat2">
                       <h3 className="h4 mb-20">Notre Vision</h3>
-                      <p className="mb-30">Energistically
-                        deploy frictionless catalysts for change
-                        vis-a-vis ubiquitous benefits.
-                        Phosfluorescently disintermediate 24/365
-                        benefits whereas resource maximizing
-                        manufactured products. Compellingly
-                        communicate user-centric relationships
-                        without goal-oriented interfaces.</p>
-                      <div className="mission-list">
-                        <div className="rounded-10"><img src="assets/img/normal/mission_2.jpg" alt="Mission" />
-                        </div>
-                        <div className="ticklist">
-                          <ul>
-                            <li>Powerful
-                              software &amp; tools</li>
-                            <li>Financial
-                              Growth</li>
-                            <li>Dedicated
-                              Team member</li>
-                            <li>Maecenas
-                              consectetur</li>
-                            <li>We drink
-                              our own kool-aid</li>
-                            <li>In
-                              hac habitasse dictumst</li>
-                          </ul>
-                        </div>
-                      </div>
+                      <p className="mb-30">Notre vision est de devenir le partenaire de référence pour les entreprises souhaitant 
+                      réussir leur transition numérique et optimiser leurs ventes en ligne. <br/><br/> Nous aspirons à être reconnus pour 
+                      notre expertise, notre créativité et notre capacité à fournir des solutions personnalisées et efficaces. <br/><br/>
+                      En mettant l'accent sur l'innovation et la collaboration avec nos clients, nous visons à être à l'avant-garde 
+                      des tendances numériques et à fournir des résultats tangibles qui ont un impact mesurable sur leurs performances 
+                      commerciales. <br/><br/> Notre objectif ultime est d'aider nos clients à prospérer dans l'économie numérique en leur offrant
+                       des stratégies et des solutions qui maximisent leur visibilité en ligne, génèrent des leads qualifiés et 
+                       augmentent leurs revenus de manière durable.</p>
                     </div>
                   }
                   {
                     activeTab === 'tab3' &&
                     <div className="filter-item w-100 cat3">
-                      <h3 className="h4
-                                  mb-20">Notre Histoire</h3>
-                      <p className="mb-30">Energistically
-                        deploy frictionless catalysts for change
-                        vis-a-vis ubiquitous benefits.
-                        Phosfluorescently disintermediate 24/365
-                        benefits whereas resource maximizing
-                        manufactured products. Compellingly
-                        communicate user-centric relationships
-                        without goal-oriented interfaces.</p>
+                      <h3 className="h4 mb-20">Nos Valeurs</h3>
+                      <p className="mb-30">Ces valeurs fondamentales peuvent nous aider à guider notre agence et à maintenir 
+                      une culture cohérente tout en fournissant des services de qualité à nos clients.</p>
                       <div className="mission-list">
                         <div className="rounded-10"><img src="assets/img/normal/mission_3.jpg" alt="Mission" /></div>
                         <div className="ticklist">
                           <ul>
-                            <li>Powerful
-                              software &amp; tools</li>
-                            <li>Financial
-                              Growth</li>
-                            <li>Dedicated
-                              Team member</li>
-                            <li>Maecenas
-                              consectetur</li>
-                            <li>We drink
-                              our own kool-aid</li>
-                            <li>In
-                              hac habitasse dictumst</li>
+                            <li>Excellence </li>
+                            <li>Collaboration </li>
+                            <li>Créativité </li>
+                            <li>Intégrité </li>
+                            <li>Résultats orientés</li>
+                            <li>Adaptabilité </li>
                           </ul>
                         </div>
                       </div>
@@ -325,35 +281,14 @@ export default function HomePage(props) {
                   {
                     activeTab === 'tab4' &&
                     <div className="filter-item w-100 cat3">
-                      <h3 className="h4
-                                  mb-20">Nos Valeurs</h3>
-                      <p className="mb-30">Energistically
-                        deploy frictionless catalysts for change
-                        vis-a-vis ubiquitous benefits.
-                        Phosfluorescently disintermediate 24/365
-                        benefits whereas resource maximizing
-                        manufactured products. Compellingly
-                        communicate user-centric relationships
-                        without goal-oriented interfaces.</p>
-                      <div className="mission-list">
-                        <div className="rounded-10"><img src="assets/img/normal/mission_3.jpg" alt="Mission" /></div>
-                        <div className="ticklist">
-                          <ul>
-                            <li>Powerful
-                              software &amp; tools</li>
-                            <li>Financial
-                              Growth</li>
-                            <li>Dedicated
-                              Team member</li>
-                            <li>Maecenas
-                              consectetur</li>
-                            <li>We drink
-                              our own kool-aid</li>
-                            <li>In
-                              hac habitasse dictumst</li>
-                          </ul>
-                        </div>
-                      </div>
+                      <h3 className="h4 mb-20">Histoire</h3>
+                      <p className="mb-30">Notre agence du digital et de la vente a commencé modestement il y a plusieurs années 
+                      avec une équipe passionnée du marketing numérique. <br/><br/> Au fil du temps, nous avons développé notre expertise et 
+                      élargi nos services, travaillant avec divers clients pour les aider à réussir leur transition vers le monde 
+                      en ligne. <br/><br/> Grâce à notre engagement envers l'excellence, notre approche collaborative et nos résultats concrets,
+                       nous sommes devenus une agence reconnue, offrant des solutions personnalisées dans différents domaines du 
+                       marketing numérique. <br/><br/> Nous continuons à écrire notre histoire en restant à l'avant-garde de l'industrie et 
+                       en aidant nos clients à prospérer dans l'économie numérique en constante évolution.</p>
                     </div>
                   }
                 </div>
