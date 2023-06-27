@@ -185,11 +185,15 @@ export default function HomePage(props) {
       <div>
         <div className data-pos-for=".process-sec" data-sec-pos="bottom-half">
           <div className="container">
-            <div className="video-box4" data-overlay="overlay1" data-opacity={5}><img src="assets/img/normal/video_5.jpg" alt="video" /> <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" className="play-btn style5 popup-video"><i className="fas
-                          fa-play" /></a>
-              <div className="video-content">
-                <h2 className="h4 mb-10">Watch Our Company Activities</h2><a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" className="gr-link popup-video">Get
-                  Started</a>
+            <div className="video-box4" data-overlay="overlay1" data-opacity={5}>
+              <img src="assets/img/normal/video_5.jpg" alt="video" />
+              <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" className="play-btn style5 popup-video">
+                <i className="fas fa-play" />
+              </a>
+              <div className="mb-30 video-content" style={{ backgroundColor: "bisque" }}>
+                <h2 className="h4 mb-10">Présentation De Notre Agence</h2>
+                <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" className="gr-link popup-video">
+                  Débuter</a>
               </div>
             </div>
           </div>
@@ -224,10 +228,10 @@ export default function HomePage(props) {
                     activeTab === 'tab1' &&
                     <div className="filter-item w-100 cat1">
                       <h3 className="h4 mb-20">Notre Mission</h3>
-                      <p className="mb-30">En tant qu'agence du digital et de la vente, notre mission est de fournir des solutions et 
-                      des services numériques pour aider nos clients à atteindre leurs objectifs de vente en ligne. Notre rôle principal 
-                      consiste à utiliser les outils et les stratégies du marketing numérique pour accroître la visibilité en ligne de nos 
-                      clients, générer du trafic qualifié vers leurs sites web et convertir ce trafic en ventes.</p>
+                      <p className="mb-30">En tant qu'agence du digital et de la vente, notre mission est de fournir des solutions et
+                        des services numériques pour aider nos clients à atteindre leurs objectifs de vente en ligne. Notre rôle principal
+                        consiste à utiliser les outils et les stratégies du marketing numérique pour accroître la visibilité en ligne de nos
+                        clients, générer du trafic qualifié vers leurs sites web et convertir ce trafic en ventes.</p>
                       <div className="mission-list">
                         <div className="rounded-10"><img src="assets/img/normal/mission_1.jpg" alt="Mission" />
                         </div>
@@ -247,22 +251,22 @@ export default function HomePage(props) {
                     activeTab === 'tab2' &&
                     <div className="filter-item w-100 cat2">
                       <h3 className="h4 mb-20">Notre Vision</h3>
-                      <p className="mb-30">Notre vision est de devenir le partenaire de référence pour les entreprises souhaitant 
-                      réussir leur transition numérique et optimiser leurs ventes en ligne. <br/><br/> Nous aspirons à être reconnus pour 
-                      notre expertise, notre créativité et notre capacité à fournir des solutions personnalisées et efficaces. <br/><br/>
-                      En mettant l'accent sur l'innovation et la collaboration avec nos clients, nous visons à être à l'avant-garde 
-                      des tendances numériques et à fournir des résultats tangibles qui ont un impact mesurable sur leurs performances 
-                      commerciales. <br/><br/> Notre objectif ultime est d'aider nos clients à prospérer dans l'économie numérique en leur offrant
-                       des stratégies et des solutions qui maximisent leur visibilité en ligne, génèrent des leads qualifiés et 
-                       augmentent leurs revenus de manière durable.</p>
+                      <p className="mb-30">Notre vision est de devenir le partenaire de référence pour les entreprises souhaitant
+                        réussir leur transition numérique et optimiser leurs ventes en ligne. <br /><br /> Nous aspirons à être reconnus pour
+                        notre expertise, notre créativité et notre capacité à fournir des solutions personnalisées et efficaces. <br /><br />
+                        En mettant l'accent sur l'innovation et la collaboration avec nos clients, nous visons à être à l'avant-garde
+                        des tendances numériques et à fournir des résultats tangibles qui ont un impact mesurable sur leurs performances
+                        commerciales. <br /><br /> Notre objectif ultime est d'aider nos clients à prospérer dans l'économie numérique en leur offrant
+                        des stratégies et des solutions qui maximisent leur visibilité en ligne, génèrent des leads qualifiés et
+                        augmentent leurs revenus de manière durable.</p>
                     </div>
                   }
                   {
                     activeTab === 'tab3' &&
                     <div className="filter-item w-100 cat3">
                       <h3 className="h4 mb-20">Nos Valeurs</h3>
-                      <p className="mb-30">Ces valeurs fondamentales peuvent nous aider à guider notre agence et à maintenir 
-                      une culture cohérente tout en fournissant des services de qualité à nos clients.</p>
+                      <p className="mb-30">Ces valeurs fondamentales peuvent nous aider à guider notre agence et à maintenir
+                        une culture cohérente tout en fournissant des services de qualité à nos clients.</p>
                       <div className="mission-list">
                         <div className="rounded-10"><img src="assets/img/normal/mission_3.jpg" alt="Mission" /></div>
                         <div className="ticklist">
@@ -282,13 +286,13 @@ export default function HomePage(props) {
                     activeTab === 'tab4' &&
                     <div className="filter-item w-100 cat3">
                       <h3 className="h4 mb-20">Histoire</h3>
-                      <p className="mb-30">Notre agence du digital et de la vente a commencé modestement il y a plusieurs années 
-                      avec une équipe passionnée du marketing numérique. <br/><br/> Au fil du temps, nous avons développé notre expertise et 
-                      élargi nos services, travaillant avec divers clients pour les aider à réussir leur transition vers le monde 
-                      en ligne. <br/><br/> Grâce à notre engagement envers l'excellence, notre approche collaborative et nos résultats concrets,
-                       nous sommes devenus une agence reconnue, offrant des solutions personnalisées dans différents domaines du 
-                       marketing numérique. <br/><br/> Nous continuons à écrire notre histoire en restant à l'avant-garde de l'industrie et 
-                       en aidant nos clients à prospérer dans l'économie numérique en constante évolution.</p>
+                      <p className="mb-30">Notre agence du digital et de la vente a commencé modestement il y a plusieurs années
+                        avec une équipe passionnée du marketing numérique. <br /><br /> Au fil du temps, nous avons développé notre expertise et
+                        élargi nos services, travaillant avec divers clients pour les aider à réussir leur transition vers le monde
+                        en ligne. <br /><br /> Grâce à notre engagement envers l'excellence, notre approche collaborative et nos résultats concrets,
+                        nous sommes devenus une agence reconnue, offrant des solutions personnalisées dans différents domaines du
+                        marketing numérique. <br /><br /> Nous continuons à écrire notre histoire en restant à l'avant-garde de l'industrie et
+                        en aidant nos clients à prospérer dans l'économie numérique en constante évolution.</p>
                     </div>
                   }
                 </div>
