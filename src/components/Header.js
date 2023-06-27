@@ -20,7 +20,7 @@ const Header = ({ onMenuButtonClick, showSearch }) => {
                     <button className="as-menu-toggle" onClick={closeMobileMenu}>
                         <i className="fal fa-times" />
                     </button>
-                    <div className="mobile-logo"><a href="/welcome"><img src="/assets/img/adiveLogo.png" alt="Adive" width={100} /></a></div>
+                    <div className="mobile-logo"><a href="/welcome"><img src="/assets/img/adiveLogo.png" alt="Adive" width={50} /></a></div>
                     <div className="as-mobile-menu">
                         <ul>
                             <li><a href="/welcome">Accueil</a></li>
@@ -62,7 +62,7 @@ const Header = ({ onMenuButtonClick, showSearch }) => {
                         <div className="row
                   align-items-center justify-content-between">
                             <div className="col-auto">
-                                <div className="header-logo"><a href="/welcome"><img src="/assets/img/adiveLogo.png" alt="Adive" width={100} /></a>
+                                <div className="header-logo"><a href="/welcome"><img src="/assets/img/adiveLogo.png" alt="Adive" width={50} /></a>
                                 </div>
                             </div>
                             <div className="col-auto d-none d-lg-inline-block">

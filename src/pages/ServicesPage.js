@@ -5,7 +5,7 @@ export default function ServicesPage(props) {
     return (
         <>
             <div>
-                <div className="breadcumb-wrapper" style={{ marginTop: 200, backgroundImage: "url(assets/img/hero/hero_bg_4_2.jpg)" }}>
+                <div className="breadcumb-wrapper" style={{ marginTop: 160, backgroundImage: "url(assets/img/hero/hero_bg_4_2.jpg)" }}>
                     <div className="container">
                         <div className="breadcumb-content">
                             <h1 className="breadcumb-title">Services</h1>

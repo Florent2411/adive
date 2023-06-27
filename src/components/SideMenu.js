@@ -9,7 +9,7 @@ const SideMenu = ({ isOpen, onClose  }) => {
               sideMenuCls" onClick={onClose}><i className="far fa-times" /></button>
                     <div className="widget footer-widget">
                         <div className="as-widget-about">
-                            <div className="about-logo"><a href="/welcome"><img src="/assets/img/adiveLogo.png" width={100} alt="Adive" /></a></div>
+                            <div className="about-logo"><a href="/welcome"><img src="/assets/img/adiveLogo.png" width={50} alt="Adive" /></a></div>
                             <p className="about-text">Votre destination de choix pour tout ce qui concerne
                                 le digital et la vente ! Chez nous, nous sommes une agence passionnée et créative, prête à vous accompagner dans votre
                                 parcours numérique et à vous aider à développer votre entreprise en ligne.</p>

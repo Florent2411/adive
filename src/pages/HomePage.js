@@ -214,10 +214,10 @@ export default function HomePage(props) {
             <div className="col-xl-auto mt-5 mt-xl-0">
               <div className="custom-box2">
                 <div className="tab-menu3 filter-menu-active">
-                  <button onClick={() => handleTabClick('tab1')} className={activeTab === 'tab1' ? 'active' : ''} type="button">Notre Mission</button>
-                  <button onClick={() => handleTabClick('tab2')} className={activeTab === 'tab2' ? 'active' : ''} type="button">Notre Vision</button>
-                  <button onClick={() => handleTabClick('tab3')} className={activeTab === 'tab3' ? 'active' : ''} type="button">Notre Histoire</button>
-                  <button onClick={() => handleTabClick('tab3')} className={activeTab === 'tab3' ? 'active' : ''} type="button">Nos Valeurs</button>
+                  <button onClick={() => handleTabClick('tab1')} className={activeTab === 'tab1' ? 'active' : ''} type="button">Mission</button>
+                  <button onClick={() => handleTabClick('tab2')} className={activeTab === 'tab2' ? 'active' : ''} type="button">Vision</button>
+                  <button onClick={() => handleTabClick('tab3')} className={activeTab === 'tab3' ? 'active' : ''} type="button">Histoire</button>
+                  <button onClick={() => handleTabClick('tab4')} className={activeTab === 'tab4' ? 'active' : ''} type="button">Valeurs</button>
                 </div>
                 <div className="filter-active-cat1">
                   {

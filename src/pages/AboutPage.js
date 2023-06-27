@@ -7,7 +7,7 @@ export default function AboutPage(props) {
         <>
             <div>
                 <div className="breadcumb-wrapper"
-                    style={{ marginTop: 200, backgroundImage: "url(assets/img/hero/hero_bg_4_2.jpg)" }}>
+                    style={{ marginTop: 160, backgroundImage: "url(assets/img/hero/hero_bg_4_2.jpg)" }}>
                     <div className="container">
                         <div className="breadcumb-content">
                             <h1 className="breadcumb-title">A Propos De Nous</h1>

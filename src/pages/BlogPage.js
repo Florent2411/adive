@@ -5,13 +5,13 @@ export default function BlogPage(props) {
     return (
         <>
             <div>
-                <div className="breadcumb-wrapper" style={{ marginTop: 200, backgroundImage: "url(/assets/img/hero/hero_bg_4_2.jpg)" }}>
+                <div className="breadcumb-wrapper" style={{ marginTop: 160, backgroundImage: "url(/assets/img/hero/hero_bg_4_2.jpg)" }}>
                     <div className="container">
                         <div className="breadcumb-content">
-                            <h1 className="breadcumb-title">Blog Grid</h1>
+                            <h1 className="breadcumb-title">Blog </h1>
                             <ul className="breadcumb-menu">
-                                <li><a href="index.html">Home</a></li>
-                                <li>Blog Grid</li>
+                                <li><a href="/welcome">Accueil</a></li>
+                                <li>Blog</li>
                             </ul>
                         </div>
                     </div>
