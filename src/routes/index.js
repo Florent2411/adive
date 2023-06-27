@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import Loader from "../components/Loader";
 import SideMenu from "../components/SideMenu";
-import Header from "../components/Header"; 
+import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 import HomePage from "../pages/HomePage";
@@ -27,6 +27,26 @@ function Routers() {
     setIsShow(true);
   };
 
+  const tabs = [
+    {
+      route: "/welcome",
+      icon: "fa fa-home",
+      label: "Accueil"
+    }, {
+      route: "/services",
+      icon: "fa fa-list",
+      label: "Services"
+    }, {
+      route: "/login",
+      icon: "fa fa-user",
+      label: "Connexion"
+    }, {
+      route: "/contact",
+      icon: "fa fa-phone",
+      label: "Contact"
+    }
+  ]
+
   return (
     <BrowserRouter>
       <div>
@@ -48,10 +68,25 @@ function Routers() {
         <Route exact path="/about" element={<AboutPage />} />
         <Route exact path="/services" element={<ServicesPage />} />
         <Route exact path="/services/jobs" element={<JobsPage />} />
-         <Route exact path="/blog" element={<BlogPage />} />
+        <Route exact path="/blog" element={<BlogPage />} />
         <Route exact path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
+      <div className="navbar fixed-bottom navbar-light d-block d-lg-none bottom-tab-nav" role="navigation"
+        style={{ backgroundColor: "white" }}>
+        <div className=" d-flex flex-row justify-content-around w-100">
+          {
+            tabs.map((tab, index) => (
+              <a href={tab.route} className="nav-link" activeClassName="active">
+                <div className="row d-flex flex-column justify-content-center align-items-center">
+                  <i className={tab.icon} />
+                  {/* <div>{tab.label}</div> */}
+                </div>
+              </a>
+            ))
+          }
+        </div>
+      </div>
     </BrowserRouter>
   );
 }

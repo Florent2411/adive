@@ -39,6 +39,12 @@ const Header = ({ onMenuButtonClick, showSearch }) => {
                             </li>
                             <li><a href="/blog">Blog</a></li>
                             <li><a href="/contact">Contact</a></li>
+                            <li className="menu-item-has-children"><a href="#">Langue</a>
+                                <ul className="sub-menu">
+                                    <li><a href="#">Anglais</a></li>
+                                    <li><a href="#">Français</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -121,24 +127,25 @@ const Header = ({ onMenuButtonClick, showSearch }) => {
                                                 </li>
                                                 <li><a href="/blog">Blog</a></li>
                                                 <li><a href="/contact">Contact</a></li>
+                                                <li className="menu-item-has-children"><a href="#">Langue</a>
+                                                    <ul className="sub-menu">
+                                                        <li><a href="#">Anglais</a></li>
+                                                        <li><a href="#">Français</a></li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                         </nav>
                                     </div>
                                     <div className="col-auto d-none d-lg-block">
                                         <div className="header-button">
-                                            <button type="button" className="icon-btn
-                                      searchBoxToggler" onClick={showSearch}>
-                                                <i className="far
-                                          fa-search" />
+                                            <button type="button" className="icon-btn searchBoxToggler" onClick={showSearch}>
+                                                <i className="far fa-search" />
                                             </button>
-                                            <a href="https://www.google.com/maps" className="icon-btn">
-                                                <i className="far
-                                          fa-location-dot" />
+                                            <a href="/login" className="icon-btn">
+                                                <i className="far fa-user" />
                                             </a>
-                                            <button className="icon-btn
-                                      sideMenuToggler" onClick={onMenuButtonClick}>
-                                                <i className="far
-                                          fa-bars" />
+                                            <button className="icon-btn sideMenuToggler" onClick={onMenuButtonClick}>
+                                                <i className="far fa-bars" />
                                             </button>
                                         </div>
                                     </div>

@@ -10,7 +10,7 @@ export default function Footer(props) {
                         <div className="container">
                             <div className="row align-items-center">
                                 <div className="col-xl-3">
-                                    <div className="footer-logo2"><a href="#"><img src="/assets/img/adiveLogo.png" alt="Adive" width={100} /></a></div>
+                                    <div className="footer-logo2"><a href="/welcome"><img src="/assets/img/adiveLogo.png" alt="Adive" width={100} /></a></div>
                                 </div>
                                 <div className="col-xl-9">
                                     <div className="newsletter-wrap">
@@ -134,9 +134,7 @@ export default function Footer(props) {
                     </div>
                 </footer>
                 <a href="#" className="scrollToTop scroll-btn">
-                    <i className="far
-          fa-long-arrow-up">
-                    </i>
+                    <i className="far fa-long-arrow-up"></i>
                 </a>
             </div>
         </>
