@@ -1,4 +1,5 @@
 import React from "react";
+import config from "../config";
 
 export default function ServicesPage(props) {
 
@@ -27,28 +28,29 @@ export default function ServicesPage(props) {
                                 <div className="service-card">
                                     <div className="service-card_icon"><i className="fal fa-display-code" /></div>
                                     <h3 className="service-card_title"><a href="/services/jobs">Mise en rélation emploi</a></h3>
-                                    <p className="service-card_text">Proactively seize installed base applications whereas.</p><a href="#" className="service-card_btn">Savoir Plus</a>
+                                    <p className="service-card_text">Nous proposons un service de mise en relation pour l'emploi</p>
+                                    <a href="/services/jobs" className="service-card_btn">En Savoir Plus</a>
                                 </div>
                             </div>
                             <div className="col-sm-6 col-lg-4 col-xl-3">
                                 <div className="service-card">
                                     <div className="service-card_icon"><i className="fal fa-chart-line-up" /></div>
                                     <h3 className="service-card_title"><a href="#">Formation professionnelle</a></h3>
-                                    <p className="service-card_text">Diestarbcse seize installed base applications our gots.</p><a href="#" className="service-card_btn">Savoir Plus</a>
+                                    <p className="service-card_text">Diestarbcse seize installed base applications our gots.</p><a href="#" className="service-card_btn">En Savoir Plus</a>
                                 </div>
                             </div>
                             <div className="col-sm-6 col-lg-4 col-xl-3">
                                 <div className="service-card">
                                     <div className="service-card_icon"><i className="fal fa-layer-group" /></div>
                                     <h3 className="service-card_title"><a href="#">Service de livraison</a></h3>
-                                    <p className="service-card_text">Moertsartis seize installed base applications taken off.</p><a href="#" className="service-card_btn">Savoir Plus</a>
+                                    <p className="service-card_text">Moertsartis seize installed base applications taken off.</p><a href="#" className="service-card_btn">En Savoir Plus</a>
                                 </div>
                             </div>
                             <div className="col-sm-6 col-lg-4 col-xl-3">
                                 <div className="service-card">
                                     <div className="service-card_icon"><i className="fal fa-bezier-curve" /></div>
                                     <h3 className="service-card_title"><a href="#">Prospection commerciale</a></h3>
-                                    <p className="service-card_text">Proactively seize installed base applications whereas.</p><a href="#" className="service-card_btn">Savoir Plus</a>
+                                    <p className="service-card_text">Proactively seize installed base applications whereas.</p><a href="#" className="service-card_btn">En Savoir Plus</a>
                                 </div>
                             </div>
                             <div className="col-sm-6 col-lg-4 col-xl-3">
@@ -56,39 +58,39 @@ export default function ServicesPage(props) {
                                     <div className="service-card_icon"><i className="fal fa-chart-pie-simple" /></div>
                                     <h3 className="service-card_title"><a href="#">Stratégie de marketing </a>
                                     </h3>
-                                    <p className="service-card_text">Diestarbcse seize installed base applications our gots.</p><a href="#" className="service-card_btn">Savoir Plus</a>
+                                    <p className="service-card_text">Diestarbcse seize installed base applications our gots.</p><a href="#" className="service-card_btn">En Savoir Plus</a>
                                 </div>
                             </div>
                             <div className="col-sm-6 col-lg-4 col-xl-3">
                                 <div className="service-card">
                                     <div className="service-card_icon"><i className="fal fa-bullhorn" /></div>
                                     <h3 className="service-card_title"><a href="#">Rédaction de contenu web</a></h3>
-                                    <p className="service-card_text">Moertsartis seize installed base applications taken off.</p><a href="#" className="service-card_btn">Savoir Plus</a>
+                                    <p className="service-card_text">Moertsartis seize installed base applications taken off.</p><a href="#" className="service-card_btn">En Savoir Plus</a>
                                 </div>
                             </div>
                             <div className="col-sm-6 col-lg-4 col-xl-3">
                                 <div className="service-card">
                                     <div className="service-card_icon"><i className="fal fa-file-pen" /></div>
                                     <h3 className="service-card_title"><a href="#">Conception graphique</a></h3>
-                                    <p className="service-card_text">Gattisbarti seize installed base applications believed.</p><a href="#" className="service-card_btn">Savoir Plus</a>
+                                    <p className="service-card_text">Gattisbarti seize installed base applications believed.</p><a href="#" className="service-card_btn">En Savoir Plus</a>
                                 </div>
                             </div>
                             <div className="col-sm-6 col-lg-4 col-xl-3">
                                 <div className="service-card">
                                     <div className="service-card_icon"><i className="fal fa-chart-mixed" /></div>
                                     <h3 className="service-card_title"><a href="#">Vente en ligne</a></h3>
-                                    <p className="service-card_text">Notalianops seize installed base applications gift boxs.</p><a href="#" className="service-card_btn">Savoir Plus</a>
+                                    <p className="service-card_text">Notalianops seize installed base applications gift boxs.</p><a href="#" className="service-card_btn">En Savoir Plus</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section className="space process-sec bg-smoke" style={{backgroundImage: "url(assets/img/bg/process_bg_1.png)"}}>
+                <section className="space process-sec bg-smoke" style={{ backgroundImage: "url(assets/img/bg/process_bg_1.png)" }}>
                     <div className="container">
                         <div className="col-lg-6">
                             <div className="title-area text-center text-lg-start"><span className="sub-title">Comment nous travaillons</span>
                                 <h2 className="sec-title">Notre processus de travail</h2>
-                                <p className="sec-text mb-4 me-auto ms-auto ms-lg-0 pe-lg-5 me-lg-5">Nous travaillons en suivant un processus en 3 étapes pour garantir un travail efficace et des résultats de qualité. Voici comment nous procédons :</p><a href="/about" className="as-btn mb-20">Savoir Plus</a>
+                                <p className="sec-text mb-4 me-auto ms-auto ms-lg-0 pe-lg-5 me-lg-5">Nous travaillons en suivant un processus en 3 étapes pour garantir un travail efficace et des résultats de qualité. Voici comment nous procédons :</p><a href="/about" className="as-btn mb-20">En Savoir Plus</a>
                             </div>
                         </div>
                         <div className="process-line"><img src="assets/img/shape/process_line.svg" alt="shape" /></div>
@@ -126,7 +128,7 @@ export default function ServicesPage(props) {
                         </div>
                         <div className="process-call-wrap">
                             <div className="process-call-btn">
-                                <div className="play-btn"><i className="fa-solid fa-phone" /></div><a href="tel:+22670966407" className="call-link">(+226) 70-96-64-07</a>
+                                <div className="play-btn"><i className="fa-solid fa-phone" /></div><a href={`tel:${config.firstContact}`} className="call-link">{config.firstContact}</a>
                             </div>
                             <div className="process-call-img"><img src="assets/img/normal/process_man.png" alt="man" /></div>
                         </div>

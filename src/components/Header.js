@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import config from "../config";
 
 const Header = ({ onMenuButtonClick, showSearch }) => {
 
@@ -75,19 +76,19 @@ const Header = ({ onMenuButtonClick, showSearch }) => {
                                 <div className="header-info-wrap">
                                     <div className="header-info">
                                         <div className="header-info_icon icon-btn"><i className="fa-solid fa-phone" /></div>
-                                        <div className="media-body"><span className="header-info_text">Appel</span> <a className="header-info_link" href="tel:+22670966407">(+226) 70-96-64-07</a></div>
+                                        <div className="media-body"><span className="header-info_text">Appel</span> 
+                                        <a className="header-info_link" href={`tel:${config.firstContact}`}>{config.firstContact}</a></div>
                                     </div>
                                     <div className="header-info">
                                         <div className="header-info_icon icon-btn"><i className="fa-solid fa-envelope" /></div>
                                         <div className="media-body"><span className="header-info_text">Email</span>
-                                            <a className="header-info_link" href="mailto:info@Adive.com">info@Adive.com</a>
+                                            <a className="header-info_link" href={`mailto:${config.email}`}>{config.email}</a>
                                         </div>
                                     </div>
                                     <div className="header-info">
                                         <div className="header-info_icon icon-btn"><i className="fa-solid fa-clock" /></div>
                                         <div className="media-body"><span className="header-info_text">Disponibilité</span>
-                                            <p className="header-info_link">Mon - Fri:
-                                                09AM - 18PM</p>
+                                            <p className="header-info_link">{config.availability}</p>
                                         </div>
                                     </div>
                                 </div>

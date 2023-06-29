@@ -53,7 +53,7 @@ export default function JobsPage(props) {
                                         <p className="mb-4">Dynamically conceptualize vertical partnerships without long-term
                                             high-impact interface. Monotonectally fashion multimedia based leadership skill wherea
                                             scalable meta-service. Seamless integrate collaborative information whereas.</p> */}
-                                        <h4 className="h4">Questions Questions</h4>
+                                        <h4 className="h4">Foire Aux Questions</h4>
                                         <div className="accordion-area accordion" id="faqAccordion">
                                             <div className="accordion-card active">
                                                 <div className="accordion-header" id="collapse-item-1"><button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1"><span className="text-theme">

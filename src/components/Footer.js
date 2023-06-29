@@ -1,4 +1,5 @@
 import React from "react";
+import config from "../config";
 
 export default function Footer(props) {
 
@@ -39,9 +40,9 @@ export default function Footer(props) {
                                             <p className="footer-info style2"><i className="fas
                                       fa-location-dot" /> Ouagadougou, Burkina Faso</p>
                                             <p className="footer-info style2"><i className="fas
-                                      fa-envelope" /> <a href="mailto:info.example@Adive.com" className="info-box_link">info.example@Adive.com</a></p>
+                                      fa-envelope" /> <a href={`mailto:${config.email}`} className="info-box_link">{config.email}</a></p>
                                             <p className="footer-info style2"><i className="fas
-                                      fa-phone" /> <a href="tel:+22670966407" className="info-box_link">+(226) 70-96-64-07</a></p>
+                                      fa-phone" /> <a href={`tel:${config.firstContact}`} className="info-box_link">{config.firstContact}</a></p>
                                         </div>
                                     </div>
                                 </div>

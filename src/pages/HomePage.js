@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import CountUp from 'react-countup';
+import config from "../config";
 
 export default function HomePage(props) {
   const [activeTab, setActiveTab] = useState('tab1');
@@ -103,7 +104,7 @@ export default function HomePage(props) {
                     </div>
                     <div className="media-body">
                       <h4 className="about-grid_title">Vous avez des questions ? Cliquez sur le lien ci-dessous</h4><span className="about-grid_link"><i className="far fa-hand-point-right me-2" />
-                        <a href="#" className="gr-link">FAQ’S</a></span>
+                        <a href="/contact" className="gr-link">FAQ’S</a></span>
                     </div>
                   </div>
                 </div><a href="/about" className="as-btn gr-btn">Savoir Plus</a>
@@ -114,25 +115,20 @@ export default function HomePage(props) {
       </div>
 
 
-      <section className="cta-sec" style={{ backgroundImage: "url(assets/img/bg/cta_bg_5.jpg)" }}>
+      <section className="simple " style={{ backgroundImage: "url(/assets/img/bg/cta_bg_5.jpg)" }}>
         <div className="container">
           <div className="row gy-40 align-items-center
               justify-content-between">
             <div className="col-lg-6">
-              <h2 className="sec-title text-white mb-10">You Need Our
-                support?</h2>
-              <p className="text-white mb-n2">Perfect
-                Solution For Your Company.Conveniently grow
-                long-term.</p>
+              <h2 className="sec-title text-white mb-10">Besoin de notre expertise ?</h2>
+              <p className="text-white mb-n2">N'hésitez pas à entrer en contact avec nous.</p>
             </div>
-            <div className="col-lg-auto"><a href="tel:+19524357106" className="call-btn">
+            <div className="col-lg-auto"><a href={`tel:${config.firstContact}`} className="call-btn">
               <div className="play-btn style4"><i className="fas fa-phone" /></div>
-              <div className="btn-content"><span className="btn-text
-                              text-white">Contactez-Nous  </span> <span className="box-title gr-text">+(226) 70-96-64-07</span>
+              <div className="btn-content"><span className="btn-text text-white">Contactez-Nous  </span> <span className="box-title gr-text">{config.firstContact}</span>
               </div>
             </a></div>
-            <div className="col-lg-auto"><a href="/contact" className="as-btn
-                      gr-btn">Contact</a></div>
+            <div className="col-lg-auto"><a href="/contact" className="as-btn gr-btn">Contact</a></div>
           </div>
         </div>
       </section>

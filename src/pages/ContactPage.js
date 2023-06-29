@@ -1,4 +1,5 @@
 import React from "react";
+import config from "../config";
 
 export default function ContactPage(props) {
 
@@ -25,12 +26,17 @@ export default function ContactPage(props) {
                                     <div className="contact-info">
                                         <h4 className="contact-info_title">Téléphone :</h4>
                                         <div className="contact-info_icon"><i className="fal fa-phone" /></div>
-                                        <div className="media-body"><span className="contact-info_text"><a href="tel:+22670966407">(+226) 70-96-64-07</a> <a href="tel:+65485965789">+65-48596-5789</a></span></div>
+                                        <div className="media-body"><span className="contact-info_text">
+                                            <a href={`tel:${config.firstContact}`}>{config.firstContact}</a>
+                                            <a href={`tel:${config.secondContact}`}>{config.secondContact}</a>
+                                            <a href={`tel:${config.thirdContact}`}>{config.thirdContact}</a>
+                                        </span>
+                                        </div>
                                     </div>
                                     <div className="contact-info">
                                         <h4 className="contact-info_title">E-Mail :</h4>
                                         <div className="contact-info_icon"><i className="fal fa-envelope" /></div>
-                                        <div className="media-body"><span className="contact-info_text"><a href="mailto:info@dalky.com">info@adive.com</a> <a href="mailto:info.example@gmail.com">info.example@gmail.com</a></span></div>
+                                        <div className="media-body"><span className="contact-info_text"><a href="mailto:info@dalky.com">{config.email}</a></span></div>
                                     </div>
                                     <div className="contact-info">
                                         <h4 className="contact-info_title">Localisation :</h4>
@@ -59,11 +65,17 @@ export default function ContactPage(props) {
                                         <div className="form-group col-md-6"><select name="subject" required id="subject" className="form-select">
                                             <option value disabled="disabled" selected="selected" hidden>Selectionnez un service
                                             </option>
-                                            <option value="Web Development">Web Development</option>
-                                            <option value="Brand Marketing">Brand Marketing</option>
-                                            <option value="UI/UX Designing">UI/UX Designing</option>
-                                            <option value="Digital Marketing">Digital Marketing</option>
-                                        </select> <i className="fal fa-chevron-down" /></div>
+                                            <option value="Mise en rélation emploi">Mise en rélation emploi</option>
+                                            <option value="Formation professionnelle">Formation professionnelle</option>
+                                            <option value="Service de livraison">Service de livraison</option>
+                                            <option value="Prospection commerciale">Prospection commerciale</option>
+                                            <option value="Stratégie de marketing digital">Stratégie de marketing digital</option>
+                                            <option value="Rédaction de contenu web">Rédaction de contenu web</option>
+                                            <option value="Conception graphique">Conception graphique</option>
+                                            <option value="Vente en ligne">Vente en ligne</option>
+                                        </select>
+                                            <i className="fal fa-chevron-down" />
+                                        </div>
                                         <div className="form-group col-12"><textarea name="message" id="message" required cols={30} rows={3} className="form-control" placeholder="Message" defaultValue={""} /> <i className="fal fa-comment" /></div>
                                         <div className="form-btn col-12"><button className="as-btn">Envoyer</button></div>
                                     </div>
