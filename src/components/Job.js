@@ -61,8 +61,9 @@ export default function Job(props) {
                                         <h2 className="h3 page-title">{props.title} ({props.job.attributes.jobtype.data.attributes.nom})</h2>
                                         <p>{props.description}</p>
                                         <p style={{
-                                            backgroundColor: "beige",
-                                            padding: 15, borderRadius: 10
+                                            //backgroundColor: "beige",
+                                            padding: 15, borderRadius: 10,
+                                            border: "1px solid black"
                                         }}>
                                             <Row gutter={20}>
                                                 <Col md={8}>

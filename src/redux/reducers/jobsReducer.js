@@ -1,5 +1,6 @@
 const initialState = {
   jobs: [],
+  loading: true,
 };
 
 export const jobsReducer = (state = initialState, action) => {
@@ -7,7 +8,8 @@ export const jobsReducer = (state = initialState, action) => {
     case 'FETCH_JOBS_SUCCESS':
       return {
         ...state,
-        jobs: action.payload
+        jobs: action.payload,
+        loading: false,
       };
     default:
       return state;

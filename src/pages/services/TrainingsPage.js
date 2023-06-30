@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { fetchTrainings } from '../redux/actions/trainingsActions';
-import Training from '../components/Training';
-import Skelet from '../components/Skeleton';
+import { fetchTrainings } from '../../redux/actions/trainingsActions';
+import Training from '../../components/Training';
+import Skelet from '../../components/Skeleton';
 
 const TrainingsPage = (props) => {
     const { loading, trainings, fetchTrainings } = props;

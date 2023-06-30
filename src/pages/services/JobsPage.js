@@ -3,9 +3,10 @@ import { connect } from 'react-redux';
 import { fetchJobs } from '../../redux/actions/jobsActions';
 import Services from "../../components/Services";
 import Job from '../../components/Job';
+import Skelet from '../../components/Skeleton';
 
 const JobsPage = (props) => {
-    const { jobs, fetchJobs } = props;
+    const { loading, jobs, fetchJobs } = props;
 
     useEffect(() => {
         fetchJobs();
@@ -68,7 +69,7 @@ const JobsPage = (props) => {
                 <section className="space-extra-bottom">
                     <div className="container">
                         <div className="row gy-4">
-                            {jobs.map((job) => (
+                            {!loading && jobs.map((job) => (
                                 <Job
                                     title={job.attributes.titre}
                                     expiration={job.attributes.date_expiration}
@@ -78,6 +79,7 @@ const JobsPage = (props) => {
                                     job={job}
                                 />
                             ))}
+                            {loading && <Skelet />}
                         </div>
                         <div className="text-center mt-5">
                             <div className="as-pagination">
@@ -99,7 +101,8 @@ const JobsPage = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        jobs: state.jobs.jobs
+        jobs: state.jobs.jobs,
+        loading: state.jobs.loading
     };
 };
 

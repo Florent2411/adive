@@ -68,7 +68,8 @@ export default function Training(props) {
                                         </div>
                                         <p style={{
                                             //backgroundColor: "lightgray",
-                                            padding: 15, borderRadius: 10
+                                            padding: 15, borderRadius: 10,
+                                            border: "1px solid black"
                                         }}>
                                             <Row gutter={20}>
                                                 <Col md={8}>
@@ -112,7 +113,7 @@ export default function Training(props) {
                                                         <div className="accordion-card active">
                                                             <div className="accordion-header" id="collapse-item-1"><button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
                                                                 <span className="text-theme">
-                                                                    1.</span> Quels sont les bjectifs de cette formation ?</button></div>
+                                                                    1.</span> Quels sont les objectifs de cette formation ?</button></div>
                                                             <div id="collapse-1" className="accordion-collapse collapse show" aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
                                                                 <div className="accordion-body">
                                                                     <p className="faq-text">{props.training.attributes.objectifs}</p>
@@ -122,7 +123,7 @@ export default function Training(props) {
                                                         <div className="accordion-card">
                                                             <div className="accordion-header" id="collapse-item-2"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
                                                                 <span className="text-theme">
-                                                                    2.</span> Quel est la cible de cette formation ?</button></div>
+                                                                    2.</span> Quelle est la cible de cette formation ?</button></div>
                                                             <div id="collapse-2" className="accordion-collapse collapse" aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
                                                                 <div className="accordion-body">
                                                                     <p className="faq-text">{props.training.attributes.cible}</p>

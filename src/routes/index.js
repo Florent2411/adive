@@ -14,7 +14,7 @@ import ContactPage from "../pages/ContactPage";
 import Search from '../components/Search';
 import ErrorPage from '../pages/ErrorPage';
 import BlogPage from '../pages/BlogPage';
-import TrainingsPage from '../pages/TrainingsPage';
+import TrainingsPage from '../pages/services/TrainingsPage';
 
 function Routers() {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);

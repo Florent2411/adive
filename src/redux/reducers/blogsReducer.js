@@ -1,5 +1,6 @@
 const initialState = {
-    blogs: []
+    blogs: [],
+    loading: true,
   };
   
   export const blogsReducer = (state = initialState, action) => {
@@ -7,7 +8,8 @@ const initialState = {
       case 'FETCH_BLOGS_SUCCESS':
         return {
           ...state,
-          blogs: action.payload
+          blogs: action.payload,
+          loading: false,
         };
       default:
         return state;

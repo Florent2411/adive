@@ -2,9 +2,10 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { fetchBlogs } from '../redux/actions/blogsActions';
 import Blog from '../components/Blog';
+import Skelet from '../components/Skeleton';
 
 const BlogPage = (props) => {
-    const { blogs, fetchBlogs } = props;
+    const { loading, blogs, fetchBlogs } = props;
 
     useEffect(() => {
         fetchBlogs();
@@ -29,7 +30,7 @@ const BlogPage = (props) => {
                 <section className="space-top space-extra-bottom">
                     <div className="container">
                         <div className="row gy-4">
-                            {blogs.map((blog) => (
+                            {!loading && blogs.map((blog) => (
                                 <Blog
                                     title={blog.attributes.titre}
                                     publication={blog.attributes.publishedAt}
@@ -37,8 +38,7 @@ const BlogPage = (props) => {
                                     blog={blog}
                                 />
                             ))}
-                            {/*  */}
-
+                            {loading && <Skelet />}
                         </div>
                         <div className="text-center mt-5">
                             <div className="as-pagination">
@@ -59,7 +59,8 @@ const BlogPage = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        blogs: state.blogs.blogs
+        blogs: state.blogs.blogs,
+        loading: state.blogs.loading
     };
 };
 
