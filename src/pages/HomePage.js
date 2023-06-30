@@ -121,7 +121,7 @@ export default function HomePage(props) {
               justify-content-between">
             <div className="col-lg-6">
               <h2 className="sec-title text-white mb-10">Besoin de notre expertise ?</h2>
-              <p className="text-white mb-n2">N'hésitez pas à entrer en contact avec nous.</p>
+              {/* <p className="text-white mb-n2">N'hésitez pas à entrer en contact avec nous.</p> */}
             </div>
             <div className="col-lg-auto"><a href={`tel:${config.firstContact}`} className="call-btn">
               <div className="play-btn style4"><i className="fas fa-phone" /></div>

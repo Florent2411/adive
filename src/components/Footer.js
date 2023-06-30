@@ -66,8 +66,8 @@ export default function Footer(props) {
                                         <h3 className="widget_title">Services</h3>
                                         <div className="menu-all-pages-container">
                                             <ul className="menu">
-                                                <li><a href="/jobs">Emploi</a></li>
-                                                <li><a href="#">Formation professionnelle</a></li>
+                                                <li><a href="/services/jobs">Emploi</a></li>
+                                                <li><a href="/services/trainings">Formation professionnelle</a></li>
                                                 <li><a href="#">Service de livraison</a></li>
                                                 <li><a href="#">Prospection commerciale</a></li>
                                                 <li><a href="#">Stratégie de marketing digital</a></li>

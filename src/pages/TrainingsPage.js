@@ -1,16 +1,16 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { fetchBlogs } from '../redux/actions/blogsActions';
-import Blog from '../components/Blog';
+import { fetchTrainings } from '../redux/actions/trainingsActions';
+import Training from '../components/Training';
 
-const BlogPage = (props) => {
-    const { blogs, fetchBlogs } = props;
+const TrainingsPage = (props) => {
+    const { trainings, fetchTrainings } = props;
 
     useEffect(() => {
-        fetchBlogs();
-    }, [fetchBlogs]);
+        fetchTrainings();
+    }, [fetchTrainings]);
 
-    console.log(blogs)
+    console.log(trainings)
 
     return (
         <>
@@ -18,10 +18,10 @@ const BlogPage = (props) => {
                 <div className="breadcumb-wrapper" style={{ marginTop: 160, backgroundImage: "url(/assets/img/hero/hero_bg_4_2.jpg)" }}>
                     <div className="container">
                         <div className="breadcumb-content">
-                            <h1 className="breadcumb-title">Blog </h1>
+                            <h1 className="breadcumb-title">Formations Professionnelles </h1>
                             <ul className="breadcumb-menu">
                                 <li><a href="/welcome">Accueil</a></li>
-                                <li>Blog</li>
+                                <li>Formations professionnelles</li>
                             </ul>
                         </div>
                     </div>
@@ -29,12 +29,12 @@ const BlogPage = (props) => {
                 <section className="space-top space-extra-bottom">
                     <div className="container">
                         <div className="row gy-4">
-                            {blogs.map((blog) => (
-                                <Blog
-                                    title={blog.attributes.titre}
-                                    publication={blog.attributes.publishedAt}
-                                    contenu={blog.attributes.contenu}
-                                    blog={blog}
+                            {trainings.map((training) => (
+                                <Training
+                                    title={training.attributes.Theme}
+                                    publication={training.attributes.publishedAt}
+                                    description={training.attributes.description}
+                                    training={training}
                                 />
                             ))}
                             {/*  */}
@@ -59,14 +59,14 @@ const BlogPage = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        blogs: state.blogs.blogs
+        trainings: state.trainings.trainings
     };
 };
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        fetchBlogs: () => dispatch(fetchBlogs())
+        fetchTrainings: () => dispatch(fetchTrainings())
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(BlogPage);
+export default connect(mapStateToProps, mapDispatchToProps)(TrainingsPage);

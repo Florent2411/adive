@@ -1,17 +1,12 @@
-const initialState = {
-  jobs: []
-};
+import { combineReducers } from 'redux';
+import { jobsReducer } from "./reducers/jobsReducer";
+import { blogsReducer } from "./reducers/blogsReducer"
+import { trainingsReducer } from "./reducers/trainingsReducer"
 
-const jobsReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case 'FETCH_JOBS_SUCCESS':
-      return {
-        ...state,
-        jobs: action.payload
-      };
-    default:
-      return state;
-  }
-};
+const rootReducer = combineReducers({
+  jobs: jobsReducer,
+  blogs: blogsReducer,
+  trainings: trainingsReducer,
+});
 
-export default jobsReducer;
+export default rootReducer;

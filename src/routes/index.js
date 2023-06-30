@@ -14,6 +14,7 @@ import ContactPage from "../pages/ContactPage";
 import Search from '../components/Search';
 import ErrorPage from '../pages/ErrorPage';
 import BlogPage from '../pages/BlogPage';
+import TrainingsPage from '../pages/TrainingsPage';
 
 function Routers() {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
@@ -68,6 +69,7 @@ function Routers() {
         <Route exact path="/about" element={<AboutPage />} />
         <Route exact path="/services" element={<ServicesPage />} />
         <Route exact path="/services/jobs" element={<JobsPage />} />
+        <Route exact path="/services/trainings" element={<TrainingsPage />} />
         <Route exact path="/blog" element={<BlogPage />} />
         <Route exact path="/contact" element={<ContactPage />} />
       </Routes>
