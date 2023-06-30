@@ -67,7 +67,7 @@ export default function Training(props) {
                                                 style={{ width: "-webkit-fill-available" }} />
                                         </div>
                                         <p style={{
-                                            backgroundColor: "antiquewhite",
+                                            //backgroundColor: "lightgray",
                                             padding: 15, borderRadius: 10
                                         }}>
                                             <Row gutter={20}>
@@ -142,7 +142,7 @@ export default function Training(props) {
                                                         <div className="accordion-card">
                                                             <div className="accordion-header" id="collapse-item-2"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
                                                                 <span className="text-theme">
-                                                                    D.</span> Description de cette formation</button></div>
+                                                                    4.</span> Description de cette formation</button></div>
                                                             <div id="collapse-2" className="accordion-collapse collapse" aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
                                                                 <div className="accordion-body">
                                                                     <p className="faq-text">{props.training.attributes.description}</p>

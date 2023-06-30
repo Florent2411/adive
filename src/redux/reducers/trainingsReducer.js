@@ -1,5 +1,6 @@
 const initialState = {
     trainings: [],
+    loading: true,
   };
   
   export const trainingsReducer = (state = initialState, action) => {
@@ -7,7 +8,8 @@ const initialState = {
       case 'FETCH_TRAININGS_SUCCESS':
         return {
           ...state,
-          trainings: action.payload
+          trainings: action.payload,
+          loading: false,
         };
       default:
         return state;

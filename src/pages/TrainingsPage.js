@@ -2,14 +2,16 @@ import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { fetchTrainings } from '../redux/actions/trainingsActions';
 import Training from '../components/Training';
+import Skelet from '../components/Skeleton';
 
 const TrainingsPage = (props) => {
-    const { trainings, fetchTrainings } = props;
+    const { loading, trainings, fetchTrainings } = props;
 
     useEffect(() => {
         fetchTrainings();
     }, [fetchTrainings]);
 
+    console.log(loading)
     console.log(trainings)
 
     return (
@@ -29,7 +31,7 @@ const TrainingsPage = (props) => {
                 <section className="space-top space-extra-bottom">
                     <div className="container">
                         <div className="row gy-4">
-                            {trainings.map((training) => (
+                            {!loading && trainings.map((training) => (
                                 <Training
                                     title={training.attributes.Theme}
                                     publication={training.attributes.publishedAt}
@@ -37,8 +39,7 @@ const TrainingsPage = (props) => {
                                     training={training}
                                 />
                             ))}
-                            {/*  */}
-
+                            {loading && <Skelet />}
                         </div>
                         <div className="text-center mt-5">
                             <div className="as-pagination">
@@ -59,7 +60,8 @@ const TrainingsPage = (props) => {
 
 const mapStateToProps = (state) => {
     return {
-        trainings: state.trainings.trainings
+        trainings: state.trainings.trainings,
+        loading: state.trainings.loading
     };
 };
 

@@ -19,7 +19,7 @@ export default function Services(props) {
                         <div className="menu-all-pages-container">
                             <ul className="menu">
                                 <li><a href="/services/jobs">Mise en rélation emploi</a></li>
-                                <li><a href="#">Formation professionnelle</a></li>
+                                <li><a href="/services/trainings">Formation professionnelle</a></li>
                                 <li><a href="#">Service de livraison</a></li>
                                 <li><a href="#">Prospection commerciale</a></li>
                                 <li><a href="#">Stratégie de marketing digital</a></li>

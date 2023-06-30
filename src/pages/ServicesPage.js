@@ -35,7 +35,7 @@ export default function ServicesPage(props) {
                             <div className="col-sm-6 col-lg-4 col-xl-3">
                                 <div className="service-card">
                                     <div className="service-card_icon"><i className="fal fa-chart-line-up" /></div>
-                                    <h3 className="service-card_title"><a href="#">Formation professionnelle</a></h3>
+                                    <h3 className="service-card_title"><a href="/services/trainings">Formation professionnelle</a></h3>
                                     <p className="service-card_text">Diestarbcse seize installed base applications our gots.</p><a href="#" className="service-card_btn">En Savoir Plus</a>
                                 </div>
                             </div>

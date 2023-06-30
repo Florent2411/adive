@@ -1,10 +1,11 @@
 import axios from 'axios';
 import config from '../../config';
 
-export const fetchTrainingsSuccess = (jobs) => {
+export const fetchTrainingsSuccess = (trainings) => {
   return {
     type: 'FETCH_TRAININGS_SUCCESS',
-    payload: jobs
+    payload: trainings,
+    loading: false
   };
 };
 
