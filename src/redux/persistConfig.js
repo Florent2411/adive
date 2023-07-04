@@ -1,6 +1,6 @@
 import { createStore, applyMiddleware } from 'redux';
 import { persistStore, persistReducer } from 'redux-persist';
-import storage from 'redux-persist/lib/storage'; // ou redux-persist/lib/sessionStorage pour sessionStorage
+import storage from 'redux-persist/lib/storage/session'; // ou redux-persist/lib/sessionStorage pour sessionStorage
 import thunk from 'redux-thunk'; 
 
 import rootReducer from './reducers'; // Remplacez cette importation par votre rootReducer
