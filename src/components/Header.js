@@ -29,7 +29,7 @@ const Header = ({ onMenuButtonClick, showSearch }) => {
                             <li className="menu-item-has-children"><a href="/services">Services</a>
                                 <ul className="sub-menu">
                                     <li><a href="/services/jobs">Mise en rélation emploi</a></li>
-                                    <li><a href="#">Formation professionnelle</a></li>
+                                    <li><a href="/services/trainings">Formation professionnelle</a></li>
                                     <li><a href="#">Service de livraison</a></li>
                                     <li><a href="#">Prospection commerciale</a></li>
                                     <li><a href="#">Stratégie de marketing digital</a></li>
@@ -139,9 +139,9 @@ const Header = ({ onMenuButtonClick, showSearch }) => {
                                     </div>
                                     <div className="col-auto d-none d-lg-block">
                                         <div className="header-button">
-                                            <button type="button" className="icon-btn searchBoxToggler" onClick={showSearch}>
+                                            {/* <button type="button" className="icon-btn searchBoxToggler" onClick={showSearch}>
                                                 <i className="far fa-search" />
-                                            </button>
+                                            </button> */}
                                             <a href="/login" className="icon-btn">
                                                 <i className="far fa-user" />
                                             </a>

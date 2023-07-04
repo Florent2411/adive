@@ -19,23 +19,24 @@ export default function Blog(props) {
         <>
             <div className="col-md-6 col-xl-4">
                 <div className="blog-card">
-                    <div className="blog-img">
-                        <img src={props.blog.attributes.image.data.attributes.formats.large.url} alt="blog image" />
+                    <div className="blog-img" style={{height: 150}}>
+                        <img src={props.blog.attributes.image.data.attributes.url} alt="blog image" />
                         <a href="#" className="category">
-                            <i className="far fa-folder" />
-                            {props.blog.attributes.category.data.attributes.nom}
+                            <i className="fal fa-calendar-days" />
+                            {props.publication.slice(0, 10)}
+
                         </a>
                     </div>
                     <div className="blog-content">
                         <div className="blog-meta">
                             <a href="#">
-                                <i className="fal fa-calendar-days" />
-                                {props.publication.slice(0, 10)}
+                                <i className="far fa-folder" />
+                                {props.blog.attributes.category.data.attributes.nom}...
                             </a>
                         </div>
                         <h3 className="blog-title box-title">
                             <a href="#" onClick={() => openModal(props.blog)}>
-                                {props.title}
+                                {props.title.slice(0, 20)}...
                             </a>
                         </h3>
                         <p className="blog-text">
@@ -63,7 +64,7 @@ export default function Blog(props) {
                                     <div className="page-content">
                                         <h2 className="h3 page-title">{props.title} </h2>
                                         <div className="page-img">
-                                            <img src={props.blog.attributes.image.data.attributes.formats.large.url} />
+                                            <img src={props.blog.attributes.image.data.attributes.url} />
                                         </div>
                                         <p>{props.contenu}</p>
                                     </div>

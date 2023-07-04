@@ -22,20 +22,20 @@ export default function Training(props) {
                     <div className="blog-img">
                         <img src={props.training.attributes.image.data[0].attributes.formats.thumbnail.url} alt="blog image" />
                         <a href="#" className="category">
-                            <i className="far fa-folder" />
-                            {props.training.attributes.langue}
+                            <i className="fal fa-calendar-days" />
+                            {props.publication.slice(0, 10)}
                         </a>
                     </div>
                     <div className="blog-content">
                         <div className="blog-meta">
                             <a href="#">
-                                <i className="fal fa-calendar-days" />
-                                {props.publication.slice(0, 10)}
+                                <i className="far fa-folder" />
+                                {props.training.attributes.langue.slice(0, 20)}...
                             </a>
                         </div>
                         <h3 className="blog-title box-title">
                             <a href="#" onClick={() => openModal(props.training)}>
-                                {props.title}
+                                {props.title.slice(0, 20)}...
                             </a>
                         </h3>
                         <p className="blog-text">

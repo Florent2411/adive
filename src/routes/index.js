@@ -51,15 +51,15 @@ function Routers() {
   return (
     <BrowserRouter>
       <div>
-        <Loader />
+        {/* <Loader /> */}
         <SideMenu isOpen={isSideMenuOpen} onClose={() => {
           setIsSideMenuOpen(false);
         }} />
       </div>
       <div>
-        <Search isShow={isShow} onClose={() => {
+        {/* <Search isShow={isShow} onClose={() => {
           setIsShow(false);
-        }} />
+        }} /> */}
         <Header onMenuButtonClick={toggleSideMenu} showSearch={toggleSearch} />
       </div>
       <Routes>

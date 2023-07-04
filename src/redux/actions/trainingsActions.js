@@ -10,7 +10,7 @@ export const fetchTrainingsSuccess = (trainings) => {
 };
 
 export const fetchTrainings = () => {
-  return (dispatch) => {
+  return (dispatch, getState) => {
     axios.get(config.apiUrl +"/formations?populate=*")
       .then((response) => {
         //console.log(response.data.data)
