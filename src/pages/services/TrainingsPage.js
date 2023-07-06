@@ -3,31 +3,25 @@ import { connect } from 'react-redux';
 import { fetchTrainings } from '../../redux/actions/trainingsActions';
 import Training from '../../components/Training';
 import Skelet from '../../components/Skeleton';
+import Breadcumb from '../../components/Breadcumb';
 
 const TrainingsPage = (props) => {
     const { loading, trainings, fetchTrainings } = props;
-
     useEffect(() => {
         fetchTrainings();
     }, [fetchTrainings]);
 
-    console.log(loading)
-    console.log(trainings)
+    const breadcumb = {
+        text: "Toutes nos Formations",
+        mainLinkText: 'Accueil',
+        mainLink: '/accueil',
+        sublink: "Nos formations"
+    }
 
     return (
         <>
             <div>
-                <div className="breadcumb-wrapper" style={{ marginTop: 160, backgroundImage: "url(/assets/img/hero/hero_bg_4_2.jpg)" }}>
-                    <div className="container">
-                        <div className="breadcumb-content">
-                            <h1 className="breadcumb-title">Formations Professionnelles </h1>
-                            <ul className="breadcumb-menu">
-                                <li><a href="/welcome">Accueil</a></li>
-                                <li>Formations professionnelles</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <Breadcumb breadcumb={breadcumb} />
                 <section className="space-top space-extra-bottom">
                     <div className="container">
                         <div className="row gy-4">

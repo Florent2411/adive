@@ -2,13 +2,15 @@ import React from "react";
 import CountUp from 'react-countup';
 import Breadcumb from '../components/Breadcumb';
 
-export default function AboutPage(props) {
+export default function BiblioPage(props) {
+
     const breadcumb = {
-        text: "A Propos De Nous",
+        text: 'Adive Biblio',
         mainLinkText: 'Accueil',
         mainLink: '/accueil',
-        sublink: "A Propos"
+        sublink: 'Biblio'
     }
+
     return (
         <>
             <div>

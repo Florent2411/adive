@@ -1,22 +1,19 @@
 import React from "react";
 import config from "../config";
+import Breadcumb from '../components/Breadcumb';
 
 export default function ServicesPage(props) {
+    const breadcumb = {
+        text: "Tous nos Services",
+        mainLinkText: 'Accueil',
+        mainLink: '/accueil',
+        sublink: "Nos Services"
+    }
 
     return (
         <>
             <div>
-                <div className="breadcumb-wrapper" style={{ marginTop: 160, backgroundImage: "url(assets/img/hero/hero_bg_4_2.jpg)" }}>
-                    <div className="container">
-                        <div className="breadcumb-content">
-                            <h1 className="breadcumb-title">Services</h1>
-                            <ul className="breadcumb-menu">
-                                <li><a href="/welcome">Accueil</a></li>
-                                <li>Services</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <Breadcumb breadcumb={breadcumb} />
                 <section className="space">
                     <div className="container">
                         <div className="title-area text-center"><span className="sub-title">Ce que nous faisons</span>

@@ -6,14 +6,14 @@ export default function Services(props) {
         <>
             <div className="col-xxl-4 col-lg-5">
                 <aside className="sidebar-area">
-                    <div className="widget widget_search">
+                    {/* <div className="widget widget_search">
                         <form className="search-form">
                             <input type="text" placeholder="Recherche..." />
                             <button type="submit">
                                 <i className="far fa-search" />
                             </button>
                         </form>
-                    </div>
+                    </div> */}
                     <div className="widget widget_nav_menu">
                         <h3 className="widget_title">Tous Les Services</h3>
                         <div className="menu-all-pages-container">

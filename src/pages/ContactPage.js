@@ -1,22 +1,18 @@
 import React from "react";
 import config from "../config";
+import Breadcumb from '../components/Breadcumb';
 
 export default function ContactPage(props) {
-
+    const breadcumb = {
+        text: 'Nous Contacter',
+        mainLinkText: 'Accueil',
+        mainLink: '/accueil',
+        sublink: 'Contact'
+    }
     return (
         <>
             <div>
-                <div className="breadcumb-wrapper" style={{ marginTop: 160, backgroundImage: "url(assets/img/hero/hero_bg_4_2.jpg)" }}>
-                    <div className="container">
-                        <div className="breadcumb-content">
-                            <h1 className="breadcumb-title">Contact</h1>
-                            <ul className="breadcumb-menu">
-                                <li><a href="index.html">Accueil</a></li>
-                                <li>Contact</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <Breadcumb breadcumb={breadcumb} marginBottom='0' />
                 <div className="space">
                     <div className="container">
                         <div className="row gy-40">

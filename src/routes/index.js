@@ -11,10 +11,15 @@ import AboutPage from "../pages/AboutPage"
 import ServicesPage from "../pages/ServicesPage";
 import JobsPage from "../pages/services/JobsPage";
 import ContactPage from "../pages/ContactPage";
-import Search from '../components/Search';
 import ErrorPage from '../pages/ErrorPage';
 import BlogPage from '../pages/BlogPage';
 import TrainingsPage from '../pages/services/TrainingsPage';
+import AllJobsPage from '../pages/AllJobsPage';
+import DevisPage from '../pages/DevisPage';
+import BiblioPage from '../pages/BiblioPage';
+import FaqPage from '../pages/FaqPage';
+import BlogDetailsPage from '../pages/BlogDetailsPage';
+
 
 function Routers() {
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
@@ -30,7 +35,7 @@ function Routers() {
 
   const tabs = [
     {
-      route: "/welcome",
+      route: "/accueil",
       icon: "fa fa-home",
       label: "Accueil"
     }, {
@@ -57,21 +62,25 @@ function Routers() {
         }} />
       </div>
       <div>
-        {/* <Search isShow={isShow} onClose={() => {
-          setIsShow(false);
-        }} /> */}
         <Header onMenuButtonClick={toggleSideMenu} showSearch={toggleSearch} />
       </div>
       <Routes>
         <Route exact path="/" element={<HomePage />} />
         <Route exact path="/*" element={<ErrorPage />} />
-        <Route exact path="/welcome" element={<HomePage />} />
-        <Route exact path="/about" element={<AboutPage />} />
-        <Route exact path="/services" element={<ServicesPage />} />
+        <Route exact path="/accueil" element={<HomePage />} />
+        <Route exact path="/a-propos-de-nous" element={<AboutPage />} />
+        <Route exact path="/nos-services" element={<ServicesPage />} />
+        <Route exact path="/nos-formations" element={<TrainingsPage />} />
+        <Route exact path="/nos-offres-emplois" element={<AllJobsPage />} />
+        <Route exact path="/nos-actualites" element={<BlogPage />} />
+        <Route exact path="/demander-un-devis" element={<DevisPage />} />
+        <Route exact path="/adive-biblio" element={<BiblioPage />} />
+        <Route exact path="/faq" element={<FaqPage />} />
         <Route exact path="/services/jobs" element={<JobsPage />} />
         <Route exact path="/services/trainings" element={<TrainingsPage />} />
-        <Route exact path="/blog" element={<BlogPage />} />
         <Route exact path="/contact" element={<ContactPage />} />
+        <Route exact path="/actualite/:slug" element={<BlogDetailsPage />} />
+
       </Routes>
       <Footer />
       <div className="navbar fixed-bottom navbar-light d-block d-lg-none bottom-tab-nav" role="navigation"

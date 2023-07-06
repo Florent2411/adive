@@ -1,12 +1,88 @@
 import React, { useState } from "react";
 import config from "../config";
+import HeaderTop from "./HeaderTop";
+import MenuItems from "./MenuItems.js";
+import Search from './Search';
 
-const Header = ({ onMenuButtonClick, showSearch }) => {
+const Header = ({ onMenuButtonClick }) => {
 
     const [mobileMenu, setMobileMenu] = useState(false);
 
+    const menu = [
+        {
+            name: "Accueil",
+            route: "/accueil",
+            hasChildren: false
+        },
+        {
+            name: "A Propos",
+            route: "/a-propos-de-nous",
+            hasChildren: false
+        },
+        {
+            name: "Services",
+            route: "/nos-services",
+            hasChildren: true,
+            children: [
+                {
+                    name: "Mise en rélation emploi",
+                    route: "/services/jobs",
+                }, {
+                    name: "Formations professionnelles",
+                    route: "/services/trainings",
+                }, {
+                    name: "Service de livraison",
+                    route: "#",
+                }, {
+                    name: "Prospection commerciale",
+                    route: "#",
+                }, {
+                    name: "Stratégie de marketing digital",
+                    route: "#",
+                }, {
+                    name: "Rédaction de contenu web",
+                    route: "#",
+                }, {
+                    name: "Conception graphique",
+                    route: "#",
+                }, {
+                    name: "Vente en ligne",
+                    route: "#",
+                }
+            ]
+        }, {
+            name: "Formations",
+            route: "/nos-formations",
+            hasChildren: false
+        }, {
+            name: "Offres d'Emplois",
+            route: "/nos-offres-emplois",
+            hasChildren: false
+        }, {
+            name: "Actualités",
+            route: "/nos-actualites",
+            hasChildren: false
+        }, {
+            name: "Devis",
+            route: "/demander-un-devis",
+            hasChildren: false
+        }, {
+            name: "Biblio",
+            route: "/adive-biblio",
+            hasChildren: false
+        }, {
+            id: 7,
+            name: "Faq",
+            route: "/faq",
+            hasChildren: false
+        }, {
+            name: "Contact",
+            route: "/contact",
+            hasChildren: false
+        }
+    ];
+
     const toggleMobileMenu = () => {
-        console.log('dddd')
         setMobileMenu(!mobileMenu);
     };
 
@@ -21,53 +97,17 @@ const Header = ({ onMenuButtonClick, showSearch }) => {
                     <button className="as-menu-toggle" onClick={closeMobileMenu}>
                         <i className="fal fa-times" />
                     </button>
-                    <div className="mobile-logo"><a href="/welcome"><img src="/assets/img/adiveLogo.png" alt="Adive" width={50} /></a></div>
+                    <div className="mobile-logo"><a href="/"><img src="/assets/img/adiveLogo.png" alt="Adive" width={50} /></a></div>
                     <div className="as-mobile-menu">
-                        <ul>
-                            <li><a href="/welcome">Accueil</a></li>
-                            <li><a href="/about">A Propos</a></li>
-                            <li className="menu-item-has-children"><a href="/services">Services</a>
-                                <ul className="sub-menu">
-                                    <li><a href="/services/jobs">Mise en rélation emploi</a></li>
-                                    <li><a href="/services/trainings">Formation professionnelle</a></li>
-                                    <li><a href="#">Service de livraison</a></li>
-                                    <li><a href="#">Prospection commerciale</a></li>
-                                    <li><a href="#">Stratégie de marketing digital</a></li>
-                                    <li><a href="#">Rédaction de contenu web</a></li>
-                                    <li><a href="#">Conception graphique</a></li>
-                                    <li><a href="#">Vente en ligne</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="/blog">Blog</a></li>
-                            <li><a href="/contact">Contact</a></li>
-                            <li className="menu-item-has-children"><a href="#">Langue</a>
-                                <ul className="sub-menu">
-                                    <li><a href="#">Anglais</a></li>
-                                    <li><a href="#">Français</a></li>
-                                </ul>
-                            </li>
-                        </ul>
+                        <MenuItems menu={menu} />
                     </div>
                 </div>
             </div>
             <header className="as-header header-layout4" style={{ position: "fixed", zIndex: 999 }}>
-                <div className="header-top">
-                    <div className="container">
-                        <div className="row justify-content-center
-                  justify-content-lg-between align-items-center">
-                            <div className="col-auto d-none d-lg-block">
-                                <p className="header-notice">Bienvenue sur la plateforme du DIGITAL & de la VENTE</p>
-                            </div>
-                            <div className="col-auto">
-                                <div className="header-social"><span className="social-title">Suivez-Nous : </span><a href="https://www.facebook.com/"><i className="fab fa-facebook-f" /></a> <a href="https://www.twitter.com/"><i className="fab fa-twitter" /></a> <a href="https://www.linkedin.com/"><i className="fab fa-linkedin-in" /></a> <a href="https://www.instagram.com/"><i className="fab fa-instagram" /></a> <a href="https://www.youtube.com/"><i className="fab fa-youtube" /></a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {config.showTopHeader && <HeaderTop text="Bienvenue sur la plateforme du DIGITAL & de la VENTE" />}
                 <div className="menu-top">
                     <div className="container">
-                        <div className="row
-                  align-items-center justify-content-between">
+                        <div className="row align-items-center justify-content-between">
                             <div className="col-auto">
                                 <div className="header-logo"><a href="/welcome"><img src="/assets/img/adiveLogo.png" alt="Adive" width={50} /></a>
                                 </div>
@@ -76,8 +116,8 @@ const Header = ({ onMenuButtonClick, showSearch }) => {
                                 <div className="header-info-wrap">
                                     <div className="header-info">
                                         <div className="header-info_icon icon-btn"><i className="fa-solid fa-phone" /></div>
-                                        <div className="media-body"><span className="header-info_text">Appel</span> 
-                                        <a className="header-info_link" href={`tel:${config.firstContact}`}>{config.firstContact}</a></div>
+                                        <div className="media-body"><span className="header-info_text">Appel</span>
+                                            <a className="header-info_link" href={`tel:${config.firstContact}`}>{config.firstContact}</a></div>
                                     </div>
                                     <div className="header-info">
                                         <div className="header-info_icon icon-btn"><i className="fa-solid fa-envelope" /></div>
@@ -109,39 +149,13 @@ const Header = ({ onMenuButtonClick, showSearch }) => {
                                 <div className="row align-items-center
                           justify-content-between">
                                     <div className="col-auto">
-                                        <nav className="main-menu d-none
-                                  d-lg-inline-block">
-                                            <ul>
-                                                <li><a href="/welcome">Accueil</a></li>
-                                                <li><a href="/about">A Propos</a></li>
-                                                <li className="menu-item-has-children"><a href="/services">Services</a>
-                                                    <ul className="sub-menu">
-                                                        <li><a href="/services/jobs">Mise en rélation emploi</a></li>
-                                                        <li><a href="/services/trainings">Formation professionnelle</a></li>
-                                                        <li><a href="#">Service de livraison</a></li>
-                                                        <li><a href="#">Prospection commerciale</a></li>
-                                                        <li><a href="#">Stratégie de marketing digital</a></li>
-                                                        <li><a href="#">Rédaction de contenu web</a></li>
-                                                        <li><a href="#">Conception graphique</a></li>
-                                                        <li><a href="#">Vente en ligne</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="/blog">Blog</a></li>
-                                                <li><a href="/contact">Contact</a></li>
-                                                <li className="menu-item-has-children"><a href="#">Langue</a>
-                                                    <ul className="sub-menu">
-                                                        <li><a href="#">Anglais</a></li>
-                                                        <li><a href="#">Français</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
+                                        <nav className="main-menu d-none d-lg-inline-block">
+                                            <MenuItems menu={menu} />
                                         </nav>
                                     </div>
                                     <div className="col-auto d-none d-lg-block">
                                         <div className="header-button">
-                                            {/* <button type="button" className="icon-btn searchBoxToggler" onClick={showSearch}>
-                                                <i className="far fa-search" />
-                                            </button> */}
+                                            <Search />
                                             <a href="/login" className="icon-btn">
                                                 <i className="far fa-user" />
                                             </a>

@@ -1,37 +1,43 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { fetchBlogs } from '../redux/actions/blogsActions';
-import Blog from '../components/Blog';
+import { fetchJobs } from '../redux/actions/jobsActions';
+import Services from "../components/Services";
+import Job from '../components/Job';
 import Skelet from '../components/Skeleton';
 import Breadcumb from '../components/Breadcumb';
-const BlogPage = (props) => {
-    const { loading, blogs, fetchBlogs } = props;
+
+
+const AllJobsPage = (props) => {
+    const { loading, jobs, fetchJobs } = props;
 
     useEffect(() => {
-        fetchBlogs();
-    }, [fetchBlogs]);
+        fetchJobs();
+    }, [fetchJobs]);
 
 
     const breadcumb = {
-        text: "Toutes nos Actualités",
+        text: "Toutes nos offres d'emplois",
         mainLinkText: 'Accueil',
         mainLink: '/accueil',
-        sublink: "Nos Actualités"
+        sublink: "Nos offres d'emplois"
     }
 
     return (
         <>
             <div>
                 <Breadcumb breadcumb={breadcumb} />
-                <section className="space-top space-extra-bottom">
+                <section className="space-extra-bottom">
                     <div className="container">
                         <div className="row gy-4">
-                            {!loading && blogs.map((blog) => (
-                                <Blog
-                                    title={blog.attributes.titre}
-                                    publication={blog.attributes.publishedAt}
-                                    contenu={blog.attributes.contenu}
-                                    blog={blog}
+                            {!loading && jobs.map((job) => (
+                                <Job
+                                    title={job.attributes.titre}
+                                    expiration={job.attributes.date_expiration}
+                                    publication={job.attributes.date_publication}
+                                    description={job.attributes.description}
+                                    colSize={4}
+                                    //jobDomain={job.attributes.jobdomain.data.attributes.nom}
+                                    job={job}
                                 />
                             ))}
                             {loading && <Skelet />}
@@ -48,22 +54,24 @@ const BlogPage = (props) => {
                         </div>
                     </div>
                 </section>
+
             </div>
+
         </>
     );
 }
 
 const mapStateToProps = (state) => {
     return {
-        blogs: state.blogs.blogs,
-        loading: state.blogs.loading
+        jobs: state.jobs.jobs,
+        loading: state.jobs.loading
     };
 };
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        fetchBlogs: () => dispatch(fetchBlogs())
+        fetchJobs: () => dispatch(fetchJobs())
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(BlogPage);
+export default connect(mapStateToProps, mapDispatchToProps)(AllJobsPage);
