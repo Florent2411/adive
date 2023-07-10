@@ -159,9 +159,9 @@ const Header = ({ onMenuButtonClick }) => {
                                             <a href="/login" className="icon-btn">
                                                 <i className="far fa-user" />
                                             </a>
-                                            <button className="icon-btn sideMenuToggler" onClick={onMenuButtonClick}>
+                                            {/* <button className="icon-btn sideMenuToggler" onClick={onMenuButtonClick}>
                                                 <i className="far fa-bars" />
-                                            </button>
+                                            </button> */}
                                         </div>
                                     </div>
                                 </div>

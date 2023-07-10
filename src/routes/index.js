@@ -19,6 +19,7 @@ import DevisPage from '../pages/DevisPage';
 import BiblioPage from '../pages/BiblioPage';
 import FaqPage from '../pages/FaqPage';
 import BlogDetailsPage from '../pages/BlogDetailsPage';
+import TrainingDetailsPage from '../pages/TrainingDetailsPage';
 
 
 function Routers() {
@@ -79,6 +80,7 @@ function Routers() {
         <Route exact path="/services/jobs" element={<JobsPage />} />
         <Route exact path="/services/trainings" element={<TrainingsPage />} />
         <Route exact path="/contact" element={<ContactPage />} />
+        <Route exact path="/formations/:slug" element={<TrainingDetailsPage />} />
         <Route exact path="/actualite/:slug" element={<BlogDetailsPage />} />
 
       </Routes>

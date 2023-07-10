@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
-import { fetchCategories } from '../redux/actions/categoriesActions';
+import { fetchCategories } from '../../redux/actions/categoriesActions';
 
 const Categories = (props) => {
 

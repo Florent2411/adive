@@ -1,167 +1,86 @@
 import React, { useState } from "react";
 import { Row, Col, Modal } from 'antd';
-
+import { Link } from 'react-router-dom';
 export default function Training(props) {
-    const [selectedJob, setSelectedJob] = useState(null);
-    const [isModalOpen, setIsModalOpen] = useState(false);
-
-    const openModal = (job) => {
-        setSelectedJob(job);
-        setIsModalOpen(true);
-    };
-
-    const closeModal = () => {
-        setSelectedJob(null);
-        setIsModalOpen(false);
-    };
-
+    const { prix_formation, lieu, nombre_heures, typesformation, title, formateur, langue } = props;
+    console.log({ training: props.training })
     return (
         <>
-            <div className="col-md-6 col-xl-4">
-                <div className="blog-card">
-                    <div className="blog-img">
-                        <img src={props.training.attributes.image.data[0].attributes.formats.thumbnail.url} alt="blog image" />
-                        <a href="#" className="category">
-                            <i className="fal fa-calendar-days" />
-                            {props.publication.slice(0, 10)}
-                        </a>
-                    </div>
-                    <div className="blog-content">
-                        <div className="blog-meta">
-                            <a href="#">
-                                <i className="far fa-folder" />
-                                {props.training.attributes.langue.slice(0, 20)}...
-                            </a>
-                        </div>
-                        <h3 className="blog-title box-title">
-                            <a href="#" onClick={() => openModal(props.training)}>
-                                {props.title.slice(0, 20)}...
-                            </a>
-                        </h3>
-                        <p className="blog-text">
-                            {props.description.slice(0, 70)}...
-                        </p>
-                        <a style={{ cursor: "pointer" }} className="line-btn" onClick={() => openModal(props.training)}>
-                            En Savoir Plus
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <Modal
-                title=""
-                centered
-                open={isModalOpen}
-                onOk={closeModal}
-                onCancel={closeModal}
-                width={1000}
+            <div
+                className="col-12 col-sm-12 col-xl-4 col-md-4"
+                data-sal-delay={150}
+                data-sal="slide-up"
+                data-sal-duration={800}
             >
-                <section>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-xxl-12 col-lg-12">
-                                <div className="page-single">
-                                    <div className="page-content">
-                                        <h2 className="h3 page-title">{props.title} ({props.training.attributes.date_formation.slice(0, 10)})</h2>
-                                        <div className="page-img">
-                                            <img src={props.training.attributes.image.data[0].attributes.formats.thumbnail.url}
-                                                style={{ width: "-webkit-fill-available" }} />
+                <div className="edu-card card-type-1 radius-small">
+                    <div className="inner">
+                        <div className="thumbnail">
+                            <a href="course-details.html">
+                                <img
+                                    className="w-100"
+                                    src={props.training.attributes.image.data[0].attributes.formats.thumbnail.url}
+                                    alt="Course Meta"
+                                />
+                            </a>
+                            <div className="top-position status-group left-top">
+                                <span className="eduvibe-status status-03">
+                                    {typesformation}
+                                </span>
+                            </div>
+                        </div>
+                        <div className="content">
+                            <ul className="edu-meta meta-03">
+                                <li>
+                                    <i className="fa fa-map-marker" />
+                                    {lieu}
+                                </li>
+                                <li>
+                                    <i className="fa fa-clock" />
+                                    {nombre_heures} heures
+                                </li>
+                                <li>
+                                    <i className="fa fa-language" />
+                                    {langue}
+                                </li>
+                            </ul>
+                            <h6 className="title">
+                                <a href="course-details.html">
+                                    {title}
+                                </a>
+                            </h6>
+                            <div className="edu-rating rating-default">
+                                {props.description.slice(0, 70)}...
+                            </div>
+                            <div className="row">
+                                <div className="col-md-12">
+                                    <div className="author-meta">
+                                        <div className="author-thumb">
+                                            <a href="instructor-profile.html">
+                                                <img
+                                                    src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png"
+                                                    alt="Author Images"
+                                                />
+                                                <span className="author-title">  {formateur.Prenoms + ' ' + formateur.Nom}</span>
+                                            </a>
                                         </div>
-                                        <p style={{
-                                            //backgroundColor: "lightgray",
-                                            padding: 15, borderRadius: 10,
-                                            border: "1px solid black"
-                                        }}>
-                                            <Row gutter={20}>
-                                                <Col md={8}>
-                                                    <p style={{ fontWeight: "bold" }}>
-                                                        <h6>Langue </h6>
-                                                    </p>
-                                                    <p>{props.training.attributes.langue}</p>
-                                                </Col>
-                                                <Col md={8}>
-                                                    <p style={{ fontWeight: "bold" }}>
-                                                        <h6>Lieu</h6>
-                                                    </p>
-                                                    <p>{props.training.attributes.lieu}</p>
-                                                </Col>
-                                                <Col md={8}>
-                                                    <p style={{ fontWeight: "bold" }}>
-                                                        <h6>Heure(s)</h6>
-                                                    </p>
-                                                    <p>{props.training.attributes.nombre_heures}</p>
-                                                </Col>
-                                                <Col md={8}>
-                                                    <p style={{ fontWeight: "bold" }}>
-                                                        <h6>Prix</h6>
-                                                    </p>
-                                                    <p>{props.training.attributes.prix_formation}</p>
-                                                </Col>
-                                                <Col md={8}>
-                                                    <p style={{ fontWeight: "bold" }}>
-                                                        <h6>Test</h6>
-                                                    </p>
-                                                    <p>{props.training.attributes.avec_test ? "Oui" : "Non"}</p>
-                                                </Col>
-                                                <Col md={8}>
-                                                    <p style={{ fontWeight: "bold" }}>
-                                                        <h6>Certification</h6>
-                                                    </p>
-                                                    <p>{props.training.attributes.avec_certificat ? "Oui" : "Non"}</p>
-                                                </Col>
-                                                <Col md={24}>
-                                                    <div className="accordion-area accordion" id="faqAccordion">
-                                                        <div className="accordion-card active">
-                                                            <div className="accordion-header" id="collapse-item-1"><button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-                                                                <span className="text-theme">
-                                                                    1.</span> Quels sont les objectifs de cette formation ?</button></div>
-                                                            <div id="collapse-1" className="accordion-collapse collapse show" aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
-                                                                <div className="accordion-body">
-                                                                    <p className="faq-text">{props.training.attributes.objectifs}</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="accordion-card">
-                                                            <div className="accordion-header" id="collapse-item-2"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                                                                <span className="text-theme">
-                                                                    2.</span> Quelle est la cible de cette formation ?</button></div>
-                                                            <div id="collapse-2" className="accordion-collapse collapse" aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
-                                                                <div className="accordion-body">
-                                                                    <p className="faq-text">{props.training.attributes.cible}</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="accordion-card">
-                                                            <div className="accordion-header" id="collapse-item-2"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                                                                <span className="text-theme">
-                                                                    3.</span> Quelles sont compétences requises ?</button></div>
-                                                            <div id="collapse-2" className="accordion-collapse collapse" aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
-                                                                <div className="accordion-body">
-                                                                    <p className="faq-text">{props.training.attributes.Competences}</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div className="accordion-card">
-                                                            <div className="accordion-header" id="collapse-item-2"><button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                                                                <span className="text-theme">
-                                                                    4.</span> Description de cette formation</button></div>
-                                                            <div id="collapse-2" className="accordion-collapse collapse" aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
-                                                                <div className="accordion-body">
-                                                                    <p className="faq-text">{props.training.attributes.description}</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </Col>
-                                            </Row>
-                                        </p>
-                                        {/* <p>{props.description}</p> */}
                                     </div>
                                 </div>
                             </div>
+                            <div className="card-bottom">
+                                <div className="price-list price-style-03">
+                                    <div className="price current-price"> {prix_formation} CFA</div>
+                                </div>
+                                <ul className="edu-meta meta-01">
+                                    <li>
+                                        <Link style={{ cursor: "pointer" }} className="edu-btn btn-medium" to={`/formations/${props.training.attributes.slug}`}>  En Savoir Plus</Link>
+
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </section>
-            </Modal>
+                </div>
+            </div>
         </>
     );
 };

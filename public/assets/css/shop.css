@@ -1,0 +1,603 @@
+:root {
+    --color-primary: #525FE1;
+    --color-secondary: #F86F03;
+    --color-secondary-alt: #FFF6F4;
+    --color-tertiary: #FFA41B;
+    --color-tertiary-2: #7152E9;
+    --color-dark: #231F40;
+    --color-body: #6F6B80;
+    --color-heading: #231F40;
+    --color-white: #ffffff;
+    --color-shape: #EEEEEE;
+    --color-shade: #F5F5F5;
+    --color-border: #EEEEEE;
+    --color-black: #000000;
+    --color-blackest: #0f0f11;
+    --color-extra01: #666666;
+    --color-extra02: #606770;
+    --color-extra03: #FBFBFD;
+    --color-extra04: #1A1A1A;
+    --color-extra05: #242424;
+    --color-extra06: #DBF1C0;
+    --color-extra07: #C6ECE8;
+    --color-extra08: #C3ECCE;
+    --color-success: #3EB75E;
+    --color-danger: #FF0003;
+    --color-warning: #FF8F3C;
+    --color-info: #1BA2DB;
+    --color-facebook: #3B5997;
+    --color-twitter: #1BA1F2;
+    --color-youtube: #ED4141;
+    --color-linkedin: #0077B5;
+    --color-pinterest: #E60022;
+    --color-instagram: #C231A1;
+    --color-vimeo: #00ADEF;
+    --color-twitch: #6441A3;
+    --color-discord: #7289da;
+    --border-width: 2px;
+    --radius-small: 5px;
+    --radius: 10px;
+    --radius-big: 16px;
+    --p-light: 300;
+    --p-regular: 400;
+    --p-medium: 500;
+    --p-semi-bold: 600;
+    --p-bold: 700;
+    --p-extra-bold: 800;
+    --p-black: 900;
+    --shadow-primary: 0px 8px 30px rgba(0, 0, 0, 0.04);
+    --shadow-light: 1px 1px 6px rgba(0, 0, 0, 0.25);
+    --shadow-lighter: 4px 4px 20px 20px rgba(0, 0, 0, 0.01);
+    --transition: 0.3s;
+    --transition-2: 0.7s;
+    --transition-transform: transform .65s cubic-bezier(.23, 1, .32, 1);
+    --font-primary: 'Urbanist', sans-serif;
+    --font-secondary: 'Urbanist', sans-serif;
+    --font-awesome: 'Font Awesome 5 Pro';
+    --font-size-b1: 18px;
+    --font-size-b2: 16px;
+    --font-size-b3: 14px;
+    --font-size-b4: 12px;
+    --line-height-b1: 1.67;
+    --line-height-b2: 1.63;
+    --line-height-b3: 1.6;
+    --line-height-b4: 1.3;
+    --h1: 72px;
+    --h2: 68px;
+    --h3: 40px;
+    --h4: 32px;
+    --h5: 24px;
+    --h6: 20px;
+    --h1-lineHeight: 1.25;
+    --h2-lineHeight: 1.24;
+    --h3-lineHeight: 1.4;
+    --h4-lineHeight: 1.38;
+    --h5-lineHeight: 1.5;
+    --h6-lineHeight: 1.6;
+}
+
+/*-----------------------
+ Shop Style  
+ ------------------------*/
+.eduvibe-shop-single-product .inner {
+    text-align: center;
+}
+
+.eduvibe-shop-single-product .inner .eduvibe-single-product-thumb-wrapper {
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.eduvibe-shop-single-product .inner .eduvibe-single-product-thumb-wrapper a {
+    display: inline-block;
+}
+
+.eduvibe-shop-single-product .inner .eduvibe-single-product-thumb-wrapper a img {
+    width: 100%;
+    border-radius: 5px;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.eduvibe-shop-single-product .inner .eduvibe-single-product-thumb-wrapper .product-hover-info {
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    width: 100%;
+    transition: 0.4s;
+    opacity: 1;
+    z-index: 1;
+}
+
+.eduvibe-shop-single-product .inner .eduvibe-single-product-thumb-wrapper .product-hover-info ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.eduvibe-shop-single-product .inner .eduvibe-single-product-thumb-wrapper .product-hover-info ul li {
+    position: relative;
+    margin: 0 auto;
+}
+
+.eduvibe-shop-single-product .inner .eduvibe-single-product-thumb-wrapper .product-hover-info ul li a {
+    width: 152px;
+    height: 40px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 40px;
+    background: var(--color-white);
+    color: var(--color-primary);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eduvibe-shop-single-product .inner .eduvibe-single-product-thumb-wrapper .product-hover-info ul li a .eduvibe-product-popup-icon {
+    margin-right: 4px;
+    display: inline-flex;
+}
+
+.eduvibe-shop-single-product .inner .eduvibe-single-product-thumb-wrapper .product-hover-info ul li+li::after {
+    position: absolute;
+    content: "";
+    background: rgba(255, 255, 255, 0.2);
+    width: 1px;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.eduvibe-shop-single-product .inner .eduvibe-single-product-thumb-wrapper .product-hover-info ul li:first-child {
+    margin-bottom: 8px;
+}
+
+.eduvibe-shop-single-product .inner .content {
+    padding-top: 20px;
+}
+
+.eduvibe-shop-single-product .inner .content .product-author {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.eduvibe-shop-single-product .inner .content .title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 5px;
+}
+
+.eduvibe-shop-single-product .inner .content .price-list.price-style-03 {
+    margin: -8px;
+}
+
+.eduvibe-shop-single-product .inner .content .price-list.price-style-03 .price {
+    margin: 8px;
+}
+
+.eduvibe-shop-single-product .inner .content .price-list.price-style-03 .current-price {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--color-primary);
+}
+
+.eduvibe-shop-single-product .inner .content .price-list.price-style-03 .old-price {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.eduvibe-shop-single-product:hover .inner .eduvibe-single-product-thumb-wrapper .product-hover-info {
+    opacity: 1;
+}
+
+/*----------------------------
+ Product Details Styles 
+ ------------------------------*/
+.edu-product-details-style .content .edu-rating {
+    margin-bottom: 20px;
+}
+
+.edu-product-details-style .content .edu-rating .rating-count {
+    font-weight: 600;
+    color: var(--color-dark);
+}
+
+.edu-product-details-style .content .subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.edu-product-details-style .content .title {
+    margin-bottom: 15px;
+}
+
+.edu-product-details-style .content p {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .edu-product-details-style .content p {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+.edu-product-details-style .content .product-action {
+    display: flex;
+}
+
+@media only screen and (max-width: 575px) {
+    .edu-product-details-style .content .product-action {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .edu-product-details-style .content .product-action .add-to-cart-btn {
+        margin-top: 20px;
+    }
+}
+
+.edu-product-details-style .content .product-feature {
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .edu-product-details-style .content .product-feature {
+        margin-top: 20px;
+    }
+}
+
+.edu-product-details-style .content .product-feature li {
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.edu-product-details-style .content .product-feature li span {
+    font-weight: 700;
+    color: var(--color-heading);
+}
+
+.edu-product-details-style .content .product-feature li a {
+    position: relative;
+    display: inline-block;
+}
+
+.edu-product-details-style .content .product-feature li a::after {
+    position: absolute;
+    content: ",";
+    right: -3px;
+}
+
+.edu-product-details-style .content .product-feature li a:last-child:after {
+    display: none;
+}
+
+.edu-product-details-style .content .edu-quontity-btn {
+    min-width: 144px;
+}
+
+.edu-product-details-style .content .add-to-cart-btn {
+    width: 100%;
+    margin-left: 15px;
+}
+
+@media only screen and (max-width: 575px) {
+    .edu-product-details-style .content .add-to-cart-btn {
+        margin-left: 0px;
+    }
+}
+
+.edu-product-details-style .content .add-to-cart-btn a.edu-btn {
+    width: 100%;
+    text-align: center;
+}
+
+.edu-product-details-style .content .pro-qty .qtybtn {
+    right: 28px;
+}
+
+@media only screen and (max-width: 991px) {
+    .edu-product-details-style .content .pro-qty input {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .edu-product-details-style .content .pro-qty input {
+        text-align: center;
+    }
+}
+
+.edu-product-details-style .content .eduvibe-product-details-hr {
+    margin-top: 37px;
+    padding-bottom: 1px;
+}
+
+.edu-product-details-style .thumbnail {
+    padding-right: 62px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .edu-product-details-style .thumbnail {
+        padding-right: 0px;
+    }
+}
+
+.edu-product-details-style .thumbnail img.eduvibe-product-main-img {
+    border-radius: 5px;
+}
+
+.pro-qty {
+    position: relative;
+    display: inline-block;
+}
+
+.pro-qty input {
+    height: 60px;
+    border: 0 none;
+    background: #F5F5F5;
+    border-radius: 5px;
+    max-width: 144px;
+    margin-right: 15px;
+    text-align: center;
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .pro-qty input {
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .pro-qty input {
+        text-align: left;
+    }
+}
+
+.pro-qty .qtybtn {
+    position: absolute;
+    top: 10px;
+    right: 38px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.pro-qty .dec.qtybtn {
+    top: auto;
+    bottom: 10px;
+}
+
+.product-description-nav {
+    border-bottom: 1px solid #EEEEEE;
+    justify-content: center;
+    margin-bottom: 35px;
+}
+
+.product-description-nav .nav-item {
+    margin: 0 25px;
+}
+
+.product-description-nav .nav-item button.nav-link {
+    background: transparent;
+    border: 0 none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 0;
+    padding-bottom: 15px;
+    color: var(--color-heading);
+    position: relative;
+    transition: 0.4s;
+}
+
+.product-description-nav .nav-item button.nav-link::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background: var(--color-primary);
+    transition: 0.4s;
+    width: 0;
+}
+
+.product-description-nav .nav-item button.nav-link:hover,
+.product-description-nav .nav-item button.nav-link.active {
+    color: var(--color-primary);
+}
+
+.product-description-nav .nav-item button.nav-link:hover::after,
+.product-description-nav .nav-item button.nav-link.active::after {
+    width: 100%;
+}
+
+.product-description-content p:last-child {
+    margin-bottom: 0;
+}
+
+.product-description-content .comment-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-description-content .notification-text .title {
+    font-size: 16px;
+    line-height: 26px;
+    margin-right: 10px;
+}
+
+.edu-product-modal .modal-dialog {
+    max-width: 1170px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .edu-product-modal .modal-dialog {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .edu-product-modal .modal-dialog {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .edu-product-modal .modal-dialog {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .edu-product-modal .modal-dialog {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 479px) {
+    .edu-product-modal .modal-dialog {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+
+.edu-product-modal .edu-modal-body {
+    padding: 70px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .edu-product-modal .edu-modal-body {
+        padding: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .edu-product-modal .edu-modal-body {
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .edu-product-modal .edu-modal-body {
+        padding: 20px;
+    }
+}
+
+.edu-product-modal .edu-modal-header {
+    position: absolute;
+    left: calc(100% + 20px);
+    z-index: 2;
+}
+
+.edu-product-modal .edu-modal-header button {
+    padding: 0;
+    background: transparent;
+    margin: 0;
+    outline: none;
+    opacity: 1;
+    width: 25px;
+    height: 25px;
+}
+
+@media only screen and (max-width: 767px) {
+    .edu-product-modal .edu-modal-header button {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.edu-product-modal .edu-modal-header button:focus {
+    box-shadow: none;
+}
+
+.edu-product-modal .edu-modal-header button i {
+    color: var(--color-white);
+}
+
+.eduvibe-product-modal-popup.edu-product-modal .edu-modal-header {
+    left: calc(100% + 20px);
+    top: -30px;
+}
+
+@media only screen and (max-width: 1650px) {
+    .eduvibe-product-modal-popup.edu-product-modal .edu-modal-header {
+        top: 0px;
+        left: calc(100% + 10px);
+    }
+}
+
+.eduvibe-product-modal-popup .modal-content {
+    border-radius: 5px;
+}
+
+.eduvibe-product-modal-popup .edu-modal-body {
+    padding: 70px 100px 70px 70px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .eduvibe-product-modal-popup .edu-modal-body {
+        padding: 50px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .eduvibe-product-modal-popup .edu-modal-body {
+        padding: 30px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .eduvibe-product-modal-popup .edu-modal-body {
+        padding: 30px;
+    }
+}
+
+.eduvibe-product-modal-popup.eduvibe-product-modal-popup .thumbnail {
+    padding-right: 0;
+}
+
+.eduvibe-product-modal-popup.eduvibe-product-modal-popup .thumbnail img {
+    height: 545px;
+    width: 350px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 991px) {
+    .eduvibe-product-modal-popup.eduvibe-product-modal-popup .thumbnail img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+.product-hover-info ul li {
+    list-style: none;
+}
+
+.biblio-content p {
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-size: var(--font-size-b2);
+    line-height: 2;
+    font-weight: 300;
+    color: var(--color-body);
+    margin: 0px 20px 20px 0px;
+}

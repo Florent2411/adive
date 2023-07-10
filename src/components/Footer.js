@@ -1,33 +1,21 @@
 import React from "react";
 import config from "../config";
-
+import SubscribeNewsLetter from './SubscribeNewsLetter';
 export default function Footer(props) {
 
     return (
         <>
             <div>
-                <footer className="footer-wrapper footer-layout2" data-bg-src="/assets/img/bg/footer_bg_4.jpg">
-                    <div className="footer-top">
-                        <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-xl-3">
-                                    <div className="footer-logo2"><a href="/welcome"><img src="/assets/img/adiveLogo.png" alt="Adive" width={100} /></a></div>
-                                </div>
-                                <div className="col-xl-9">
-                                    <div className="newsletter-wrap">
-                                        <div className="newsletter-content">
-                                            <h3 className="newsletter-title">Newsletter</h3>
-                                            <p className="newsletter-text">Abonnez-vous dès maintenant à notre newsletter pour ne rien manquer de notre actualié</p>
-                                        </div>
-                                        <form className="newsletter-form style3">
-                                            <div className="form-group"><input className="form-control style2" type="email" placeholder="Email" required /> <i className="fal
-                                      fa-envelope" /></div><button type="submit" className="as-btn gr-btn">S'abonner</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div
+                    className=""
+                    data-pos-for=".footer-wrapper"
+                    data-sec-pos="bottom-half"
+                    style={{ marginBottom: "-97px" }}
+                ><div className="container">
+                        <SubscribeNewsLetter titre={'Abonnez-vous à notre newsletter pour recevoir les dernières informations.'} />
                     </div>
+                </div>
+                <footer className="footer-wrapper footer-layout2" data-bg-src="/assets/img/bg/footer_bg_4.jpg" style={{ paddingTop: "97px" }}>
                     <div className="widget-area">
                         <div className="container">
                             <div className="row
@@ -47,8 +35,7 @@ export default function Footer(props) {
                                     </div>
                                 </div>
                                 <div className="col-md-6 col-xl-auto">
-                                    <div className="widget
-                          widget_nav_menu footer-widget">
+                                    <div className="widget widget_nav_menu footer-widget">
                                         <h3 className="widget_title">Liens Rapides</h3>
                                         <div className="menu-all-pages-container">
                                             <ul className="menu">

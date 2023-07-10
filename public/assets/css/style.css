@@ -4,6 +4,7 @@
     --theme-color: #661FFE;
     --title-color: #040642;
     --body-color: #737588;
+    --body-color-light: #a9adcc53;
     --smoke-color: #F0F0F4;
     --smoke-color2: #F7F8FA;
     --black-color: #000000;
@@ -1947,6 +1948,26 @@ textarea.is-invalid {
     border-radius: 0
 }
 
+.primary-button {
+    background-color: var(--color-primary) !important;
+    color: var(--white-color) !important;
+}
+
+.primary-button:hover {
+    background-color: var(--white-color) !important;
+    color: var(--color-primary) !important;
+}
+
+.secondary-button {
+    background-color: var(--color-secondary) !important;
+    color: var(--white-color) !important;
+}
+
+.secondary-button:hover {
+    background-color: var(--white-color) !important;
+    color: var(--color-secondary) !important;
+}
+
 .as-btn.style2 {
     background-color: transparent;
     color: var(--white-color);
@@ -3676,8 +3697,9 @@ a.text-theme:hover,
     padding: var(--widget-padding-y, 40px) var(--widget-padding-x, 40px);
     background-color: var(--smoke-color);
     margin-bottom: 40px;
-    border-radius: 5px;
-    position: relative
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid #e2e2e5;
 }
 
 .widget[data-overlay]:before {
@@ -3734,10 +3756,30 @@ a.text-theme:hover,
     color: var(--white-color)
 }
 
+.tags_sidebar a {
+    padding: 11px 22px;
+    border-radius: 9999px !important;
+    background-color: var(--body-color-light) !important;
+}
+
+.categories_sidebar li a {
+    padding: 11px 22px;
+    border-radius: 9999px !important;
+    background-color: var(--body-color-light) !important;
+}
+
+.categories_sidebar a:before {
+    content: none !important;
+    right: 20px;
+    font-size: 20px;
+    padding-top: 2px
+}
+
 .wp-block-tag-cloud a,
 .tagcloud a {
     display: inline-block;
     border: none;
+    cursor: default;
     font-size: 14px;
     font-weight: 400;
     font-family: var(--body-font);
@@ -3755,9 +3797,9 @@ a.text-theme:hover,
 .wp-block-tag-cloud a:hover,
 .tagcloud a:hover {
     background-color: var(--theme-color);
-    color: var(--white-color) !important;
+    color: var(--theme-color) !important;
     border-color: var(--theme-color);
-    box-shadow: 0px 4px 15px rgba(102, 31, 254, 0.25)
+    box-shadow: 0px 4px 15px rgba(47, 45, 51, 0.25)
 }
 
 .wp-block-tag-cloud,
@@ -5217,9 +5259,32 @@ a.text-theme:hover,
     }
 }
 
+.menu-active a {
+    background: rgba(255, 255, 255, 0.451) !important;
+    width: 100% !important;
+    padding: 6px 18px !important;
+    border-radius: 8px;
+
+}
+
+.breadcumb-wrapper {
+    padding: 120px;
+}
+
+.bg-gradient-11 {
+    background: linear-gradient(180deg, #5B7CF3 0%, #aa8df3 100%) !important;
+}
+
+.breadcumb-solid-background {
+    background: #F7F5F2 !important;
+}
+
+.rbt-section-gap {
+    padding: 120px 0;
+}
+
 .breadcumb-menu {
     max-width: 100%;
-    padding: 0;
     margin: 30px 0 -0.5em 0;
     list-style-type: none;
     position: relative
@@ -8813,7 +8878,7 @@ ul.comment-list .as-comment-item:first-child>.as-post-comment {
 
 .blog-card .blog-img {
     overflow: hidden;
-    border-radius: 5px 5px 0 0;
+    border-radius: 20px 20px 0 0;
     position: relative
 }
 

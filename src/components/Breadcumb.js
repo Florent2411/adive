@@ -5,10 +5,11 @@ const Breadcumb = ({ breadcumb, marginBottom }) => {
             {
                 breadcumb && (
                     <div className={'mb-' + mb}>
-                        <div className="breadcumb-wrapper"
-                            style={{ marginTop: 100, backgroundImage: "url(assets/img/hero/hero_bg_4_2.jpg)" }}>
+                        <div className="breadcumb-wrapper bg-gradient-11">
                             <div className="container">
-                                <div className="breadcumb-content">
+                                < div className="breadcumb-content" style={{
+                                    marginTop: 80
+                                }}>
                                     <h1 className="breadcumb-title">{breadcumb.text}</h1>
                                     <ul className="breadcumb-menu">
                                         <li><a href={breadcumb.mainLink}>{breadcumb.mainLinkText}</a></li>
@@ -16,8 +17,8 @@ const Breadcumb = ({ breadcumb, marginBottom }) => {
                                     </ul>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        </div >
+                    </div >
                 )
             }
 

@@ -11,7 +11,7 @@ const Tags = (props) => {
         <>
             <div className="widget widget_tag_cloud">
                 <h3 className="widget_title">{titre}</h3>
-                <div className="tagcloud">
+                <div className="tagcloud tags_sidebar ">
 
                     {
                         tags.length > 1 && tags.map((tag, i) =>
